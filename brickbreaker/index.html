@@ -1,0 +1,1158 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<meta name="theme-color" content="#06080f">
+<title>Brick Breaker</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Nunito:wght@600;800&display=swap">
+<style>
+:root {
+  --bg: #06080f; --bg-2: #0e1322; --ink: #eef2ff; --muted: #8b94b3;
+  --card: #141a2c; --card-edge: #0a0d17; --accent: #3a7bf2; --accent-2: #f2d038; --red: #e0343a;
+  --f-display: "Fredoka", "Arial Rounded MT Bold", sans-serif;
+  --f-body: "Nunito", "Trebuchet MS", system-ui, sans-serif;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html, body { margin: 0; height: 100%; }
+body {
+  background: radial-gradient(circle at 50% 0%, #182040 0, var(--bg) 60%) var(--bg);
+  color: var(--ink); font-family: var(--f-body); font-weight: 600;
+  overflow: hidden; user-select: none; -webkit-user-select: none; touch-action: none;
+}
+#app { max-width: 520px; margin: 0 auto; min-height: 100dvh; display: flex; flex-direction: column; padding: env(safe-area-inset-top) 12px env(safe-area-inset-bottom); }
+.screen { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 14px; padding: 18px 0; overflow-y: auto; }
+.screen[hidden] { display: none; }
+h1 {
+  margin: 8px 0 0; font-family: var(--f-display); font-weight: 700; font-size: clamp(2.2rem, 10vw, 3.4rem); line-height: 1;
+  letter-spacing: .02em; text-align: center; color: var(--accent-2);
+  text-shadow: 0 3px 0 #a8862a, 0 6px 0 #4c3b0e, 0 10px 24px rgba(242, 208, 56, .35);
+}
+h2 { margin: 0; font-family: var(--f-display); font-weight: 700; font-size: 1.5rem; }
+.logo { display: grid; grid-template-columns: repeat(6, 22px); gap: 3px; margin-top: 10px; }
+.logo span { height: 11px; border-radius: 2px; background: var(--c); box-shadow: inset 0 -3px 0 rgba(0,0,0,.28), inset 0 1px 0 rgba(255,255,255,.25); }
+.tagline { margin: 0; text-align: center; color: var(--muted); max-width: 36ch; font-size: .95rem; }
+.tagline b { color: var(--ink); }
+.chip { display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 999px; background: var(--card); color: var(--muted); font-size: .85rem; font-weight: 800; }
+.chip b { color: var(--accent-2); }
+.actions { display: flex; flex-direction: column; gap: 10px; width: min(100%, 300px); }
+.btn {
+  appearance: none; border: 0; cursor: pointer; font: inherit; font-family: var(--f-display); font-weight: 700; font-size: 1.2rem;
+  padding: 12px 18px; border-radius: 12px; color: #fff; background: var(--accent);
+  box-shadow: 0 4px 0 #1f4ea8, 0 8px 18px rgba(58, 123, 242, .3); transition: transform .06s, box-shadow .06s;
+}
+.btn:active { transform: translateY(3px); box-shadow: 0 1px 0 #1f4ea8; }
+.btn.alt { background: var(--card); box-shadow: 0 4px 0 var(--card-edge); color: var(--ink); }
+.btn.alt:active { box-shadow: 0 1px 0 var(--card-edge); }
+.btn small { display: block; font-family: var(--f-body); font-size: .75rem; font-weight: 800; color: var(--muted); letter-spacing: .05em; }
+.btn:focus-visible { outline: 3px solid var(--accent-2); outline-offset: 3px; }
+.toggle { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 999px; background: var(--card); border: 0; color: var(--ink); font: inherit; font-weight: 800; font-size: .9rem; cursor: pointer; }
+.toggle[aria-pressed="false"] { color: var(--muted); text-decoration: line-through; }
+.help { width: 100%; max-width: 420px; background: var(--card); border-radius: 16px; padding: 14px 16px; box-shadow: 0 4px 0 var(--card-edge); }
+.help h3 { margin: 0 0 10px; font-family: var(--f-display); font-size: 1.05rem; color: var(--muted); letter-spacing: .08em; text-transform: uppercase; }
+.help ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 7px; font-size: .88rem; }
+.help li { display: grid; grid-template-columns: 58px 1fr; gap: 10px; align-items: center; color: var(--muted); }
+.help li b { color: var(--ink); }
+.pill { display: inline-block; text-align: center; padding: 3px 0; border-radius: 999px; background: var(--c); color: #111; font-family: ui-monospace, Menlo, Consolas, monospace; font-weight: 800; font-size: .7rem; letter-spacing: .05em; }
+.help p { margin: 10px 0 0; font-size: .82rem; color: var(--muted); }
+.help kbd { font-family: ui-monospace, monospace; background: #0a0d17; padding: 1px 5px; border-radius: 4px; color: var(--ink); }
+
+.bar-top { width: 100%; display: grid; grid-template-columns: 44px 1fr 44px; align-items: center; gap: 8px; }
+.bar-top h2 { text-align: center; }
+.icon-btn { width: 44px; height: 44px; border: 0; border-radius: 12px; background: var(--card); color: var(--ink); cursor: pointer; display: grid; place-items: center; box-shadow: 0 3px 0 var(--card-edge); }
+.icon-btn:active { transform: translateY(2px); box-shadow: none; }
+.icon-btn svg { width: 22px; height: 22px; fill: currentColor; }
+.levels-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; width: 100%; max-width: 420px; }
+.lvl { appearance: none; border: 0; border-radius: 10px; aspect-ratio: 1; font: inherit; font-family: var(--f-display); font-weight: 700; font-size: 1.2rem; color: var(--ink); background: var(--card); box-shadow: 0 3px 0 var(--card-edge); cursor: pointer; }
+.lvl.done { background: #1f3f7a; }
+.lvl:disabled { color: #3c4460; cursor: default; }
+.lvl:not(:disabled):active { transform: translateY(2px); box-shadow: none; }
+
+#game { padding: 8px 0; gap: 8px; }
+#game .bar-top h2 { font-size: 1.1rem; color: var(--muted); }
+#stage { position: relative; width: min(100%, calc((100dvh - 92px) * 0.75)); aspect-ratio: 3 / 4; }
+canvas { display: block; width: 100%; height: 100%; border-radius: 8px; background: #000; box-shadow: 0 0 0 2px #1d2540, 0 10px 40px rgba(0,0,0,.6); cursor: none; }
+.overlay { position: fixed; inset: 0; background: rgba(4, 6, 12, .78); display: grid; place-items: center; padding: 16px; z-index: 10; }
+.overlay[hidden] { display: none; }
+.card { width: min(100%, 340px); background: var(--card); border-radius: 18px; padding: 22px 20px; box-shadow: 0 6px 0 var(--card-edge), 0 20px 50px rgba(0,0,0,.6); display: grid; gap: 12px; text-align: center; }
+.card h2 { font-size: 1.7rem; }
+.card p { margin: 0; color: var(--muted); }
+.card .big { font-family: var(--f-display); font-size: 2.4rem; font-weight: 700; color: var(--accent-2); }
+.card .btn { width: 100%; }
+</style>
+</head>
+<body>
+<div id="app">
+
+  <!-- INICIO -->
+  <section id="home" class="screen">
+    <div class="logo" aria-hidden="true">
+      <span style="--c:#e0343a"></span><span style="--c:#e0343a"></span><span style="--c:#f28c28"></span><span style="--c:#f28c28"></span><span style="--c:#f2d038"></span><span style="--c:#f2d038"></span>
+      <span style="--c:#3ec24c"></span><span style="--c:#3ec24c"></span><span style="--c:#3a7bf2"></span><span style="--c:#3a7bf2"></span><span style="--c:#a35bea"></span><span style="--c:#a35bea"></span>
+      <span style="--c:#a9a9a9"></span><span style="--c:#a9a9a9"></span><span style="--c:#a9a9a9"></span><span style="--c:#a9a9a9"></span><span style="--c:#a9a9a9"></span><span style="--c:#a9a9a9"></span>
+    </div>
+    <h1>BRICK BREAKER</h1>
+    <p class="tagline">El clásico que venía en todos los BlackBerry. <b>34 niveles</b>, 10 cápsulas y ladrillos plateados irrompibles. Pasa los 34 y vuelve a empezar más rápido.</p>
+    <div><span class="chip">RÉCORD <b id="home-best">0</b></span> <span class="chip">NIVEL MÁXIMO <b id="home-unlocked">1</b></span></div>
+    <div class="actions">
+      <button class="btn" id="btn-continue" hidden>Continuar <small id="continue-info"></small></button>
+      <button class="btn" id="btn-play">Jugar</button>
+      <button class="btn alt" id="btn-levels">Elegir nivel</button>
+      <button class="toggle" id="btn-sfx" aria-pressed="true">🔊 Sonido</button>
+    </div>
+    <div class="help">
+      <h3>Cápsulas</h3>
+      <ul id="cap-list"></ul>
+      <p>Cada ladrillo vale 10 puntos (20 con láser, 50 con bala) y cada cápsula 50. Los ladrillos <b>plateados</b> solo se rompen con balas.</p>
+      <p>Mueve la paleta con el dedo, el ratón o <kbd>←</kbd> <kbd>→</kbd>. Toca, haz clic o pulsa <kbd>espacio</kbd> para lanzar y disparar. <kbd>P</kbd> pausa.</p>
+    </div>
+  </section>
+
+  <!-- NIVELES -->
+  <section id="levels" class="screen" hidden>
+    <div class="bar-top">
+      <button class="icon-btn" id="btn-levels-back" aria-label="Volver al inicio"><svg viewBox="0 0 24 24"><path d="M15.4 4.6 8 12l7.4 7.4-2 2L4 12l9.4-9.4z"/></svg></button>
+      <h2>Niveles</h2>
+      <span></span>
+    </div>
+    <p class="tagline">Empezar desde un nivel arranca una partida nueva con 3 vidas.</p>
+    <div class="levels-grid" id="levels-grid"></div>
+  </section>
+
+  <!-- JUEGO -->
+  <section id="game" class="screen" hidden>
+    <div class="bar-top">
+      <button class="icon-btn" id="btn-pause" aria-label="Pausa"><svg viewBox="0 0 24 24"><path d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg></button>
+      <h2 id="game-title">Brick Breaker</h2>
+      <button class="icon-btn" id="btn-sound2" aria-label="Sonido"></button>
+    </div>
+    <div id="stage"><canvas id="cv" width="480" height="640"></canvas></div>
+  </section>
+
+  <div class="overlay" id="modal" hidden><div class="card" id="modal-card" role="dialog" aria-modal="true"></div></div>
+</div>
+
+<script>
+(() => {
+  'use strict';
+
+  /* ================= Constantes ================= */
+  const W = 480, H = 640, COLS = 12, ROWS = 14, BW = 40, BH = 18, TOP = 40, WALL_Y = 32;
+  const PADDLE_Y = H - 44, PADDLE_H = 10, PADDLE_W = 64, LONG_W = 100, BALL_R = 5, MAX_BALLS = 4;
+  const COLORS = { R: '#e0343a', O: '#f28c28', Y: '#f2d038', G: '#3ec24c', B: '#3a7bf2', P: '#a35bea', S: '#a9a9a9', 2: '#2bb3a8', 3: '#c94f9b' };
+  const HP = { R: 1, O: 1, Y: 1, G: 1, B: 1, P: 1, 2: 2, 3: 3, S: Infinity };
+  const PTS = { ball: 10, laser: 20, gun: 50, bomb: 5, cap: 50 };
+  const CAPS = {
+    LIFE:  { c: '#ff5d7a', w: 5,  d: 'Vida extra.' },
+    LONG:  { c: '#3a7bf2', w: 12, d: 'Paleta más larga.' },
+    SLOW:  { c: '#3ec24c', w: 12, d: 'La bola va más lenta.' },
+    CATCH: { c: '#2bb3a8', w: 11, d: 'La bola se pega a la paleta; toca para relanzar.' },
+    GUN:   { c: '#f2d038', w: 11, d: 'Tres balas. Rompen hasta los plateados.' },
+    LASER: { c: '#e0343a', w: 8,  d: 'Láser sin límite. No rompe plateados.' },
+    BOMB:  { c: '#f28c28', w: 10, d: 'El siguiente ladrillo explota y daña a los vecinos.' },
+    MULTI: { c: '#a35bea', w: 10, d: 'Cuatro bolas en juego.' },
+    FLIP:  { c: '#c4c4c4', w: 8,  d: 'Invierte el control de la paleta. ¡Cuidado!' },
+    WRAP:  { c: '#ffffff', w: 10, d: 'La paleta sale por un lado y entra por el otro.' }
+  };
+  const CAP_NAMES = Object.keys(CAPS);
+  const CAP_W = 36, CAP_H = 14, CAP_SPEED = 95, DROP_CHANCE = 0.12;
+
+  /* ================= Niveles ================= */
+  // 12 columnas × hasta 14 filas. '.' vacío · R O Y G B P colores (1 golpe) · 2 y 3 golpes · S plateado irrompible
+  const LEVELS = [
+`............
+.RRRRRRRRRR.
+.OOOOOOOOOO.
+.YYYYYYYYYY.
+............
+............
+....G..G....`,
+`............
+GGGGGGGGGGGG
+............
+BBBBBBBBBBBB
+............
+PPPPPPPPPPPP
+............
+............
+RR........RR`,
+`............
+.....RR.....
+....OOOO....
+...YYYYYY...
+..GGGGGGGG..
+.BBBBBBBBBB.
+PPPPPPPPPPPP`,
+`............
+S..........S
+S.RRRRRRRR.S
+S.OOOOOOOO.S
+S.YYYYYYYY.S
+S..........S
+S..........S
+............
+....2222....`,
+`............
+R.R.R.R.R.R.
+.O.O.O.O.O.O
+Y.Y.Y.Y.Y.Y.
+.G.G.G.G.G.G
+B.B.B.B.B.B.
+.P.P.P.P.P.P`,
+`............
+RRRR....RRRR
+RRRR....RRRR
+OOOO....OOOO
+....SSSS....
+....SSSS....
+YYYY....YYYY
+GGGG....GGGG`,
+`............
+.....RR.....
+....ROOR....
+...ROYYOR...
+..ROYGGYOR..
+.ROYGBBGYOR.
+..ROYGGYOR..
+...ROYYOR...
+....ROOR....
+.....RR.....`,
+`............
+RRRRRRRRRRRR
+OOOOOOOOOOOO
+YYYYYYYYYYYY
+............
+SSSSS..SSSSS`,
+`............
+..RR....RR..
+.RRRR..RRRR.
+RRRRRRRRRRRR
+RRRRRRRRRRRR
+.RRRRRRRRRR.
+..RRRRRRRR..
+...RRRRRR...
+....RRRR....
+.....RR.....`,
+`............
+333333333333
+222222222222
+GGGGGGGGGGGG
+............
+............
+S....SS....S`,
+`............
+S..........S
+.S........S.
+..S......S..
+...RRRRRR...
+...OOOOOO...
+...YYYYYY...
+..S......S..
+.S........S.
+S..........S`,
+`............
+R..O..Y..G..
+R..O..Y..G..
+R..O..Y..G..
+R..O..Y..G..
+R..O..Y..G..
+.S..S..S..S.
+.S..S..S..S.`,
+`............
+...YYYYYY...
+..YYYYYYYY..
+.YYBBYYBBYY.
+.YYBBYYBBYY.
+.YYYYYYYYYY.
+.YRYYYYYYRY.
+..YRRRRRRY..
+...YYYYYY...`,
+`............
+SSSSSSSSSSSS
+S..........S
+S.RRRRRRRR.S
+S.RRRRRRRR.S
+S.22222222.S
+S..........S
+S..........S
+SS........SS`,
+`............
+R...........
+OR..........
+YOR.........
+GYOR........
+BGYOR.......
+PBGYOR......
+.PBGYOR.....
+..PBGYOR....
+...PBGYOR...
+....PBGYOR..`,
+`............
+..G.....G...
+...G...G....
+..GGGGGGG...
+.GG.GGG.GG..
+GGGGGGGGGGG.
+G.GGGGGGG.G.
+G.G.....G.G.
+...GG.GG....`,
+`............
+S.S.S.S.S.S.
+.R.R.R.R.R.R
+S.S.S.S.S.S.
+.O.O.O.O.O.O
+S.S.S.S.S.S.
+.Y.Y.Y.Y.Y.Y`,
+`............
+.333....333.
+.222....222.
+.RRR....RRR.
+.RRR....RRR.
+.SSS....SSS.
+.....OO.....
+.....OO.....
+.....OO.....`,
+`............
+.....BB.....
+....BBBB....
+...BBBBBB...
+..BBBBBBBB..
+.BBBBBBBBBB.
+....S22S....
+....S22S....
+....S22S....
+....S22S....`,
+`............
+S.S.S.S.S.S.
+SSSSSSSSSSSS
+RROOYYGGBBPP
+RROOYYGGBBPP
+............
+............
+...S....S...`,
+`............
+R....RR....R
+.R..R..R..R.
+..RR....RR..
+O....OO....O
+.O..O..O..O.
+..OO....OO..
+Y....YY....Y
+.Y..Y..Y..Y.
+..YY....YY..`,
+`............
+333333333333
+333333333333
+222222222222
+............
+S.SSSSSSSS.S`,
+`............
+.SSSSSSSSSS.
+.SRRRRRRRRS.
+.SOOOOOOOOS.
+.SYYYYYYYYS.
+.SGGGGGGGGS.
+.SBBBBBBBBS.
+.SSSS..SSSS.`,
+`............
+P..........P
+.P........P.
+..P......P..
+...P....P...
+....P..P....
+.....PP.....
+....P..P....
+...P....P...
+..P......P..
+.P........P.
+P..........P`,
+`............
+............
+...SSSSSS...
+..S333333S..
+..S222222S..
+..S.RRRR.S..
+..S......S..
+..SS....SS..`,
+`............
+B.B.B.B.B.B.
+.B.B.B.B.B.B
+B.B.B.B.B.B.
+.B.B.B.B.B.B
+B.B.B.B.B.B.
+.B.B.B.B.B.B
+B.B.B.B.B.B.
+.B.B.B.B.B.B
+S.S.S.S.S.S.`,
+`............
+RRR.........
+SSS.........
+...OOO......
+...SSS......
+......YYY...
+......SSS...
+.........GGG
+.........SSS`,
+`............
+S3S3S3S3S3S3
+S2S2S2S2S2S2
+SRSRSRSRSRSR
+S.S.S.S.S.S.
+S.S.S.S.S.S.`,
+`............
+SSSSSSSSSS..
+.........S..
+.SSSSSSS.S..
+.S3333S..S..
+.S....S..S..
+.S.SSSS..S..
+.S.......S..
+.SSSSSSSSS..`,
+`............
+..33....33..
+.3223..3223.
+322222222223
+.3223..3223.
+..33....33..
+....S..S....
+...S....S...`,
+`............
+BBBB..BBBB..
+B...B.B...B.
+B...B.B...B.
+BBBB..BBBB..
+B...B.B...B.
+B...B.B...B.
+BBBB..BBBB..`,
+`............
+S.S.S.S.S.S.
+.S.S.S.S.S.S
+S.S.S.S.S.S.
+.S.S.S.S.S.S
+RRRRRRRRRRRR
+OOOOOOOOOOOO`,
+`............
+333333333333
+S..........S
+S.33333333.S
+S..........S
+S.S......S.S
+S.S.3333.S.S
+S.S......S.S
+S.S.SSSS.S.S`,
+`............
+3S3S3S3S3S3S
+S3S3S3S3S3S3
+............
+.PPPPPPPPPP.
+.BBBBBBBBBB.
+.GGGGGGGGGG.
+.YYYYYYYYYY.
+.OOOOOOOOOO.
+.RRRRRRRRRR.
+............
+S....SS....S`
+  ];
+  const N_LEVELS = LEVELS.length;
+
+  function parseLevel(n) {
+    const rows = LEVELS[n - 1].split('\n');
+    const grid = [];
+    for (let r = 0; r < ROWS; r++) {
+      grid.push([]);
+      for (let c = 0; c < COLS; c++) {
+        const ch = (rows[r] || '')[c] || '.';
+        grid[r].push(ch === '.' ? null : { t: ch, hp: HP[ch], max: HP[ch], r, c });
+      }
+    }
+    return grid;
+  }
+
+  /* ================= Guardado ================= */
+  const STORE_KEY = 'brickbreaker-v1';
+  const save = (() => {
+    const base = { best: 0, unlocked: 1, sfx: true, run: null };
+    try {
+      const s = JSON.parse(localStorage.getItem(STORE_KEY));
+      if (s && typeof s.unlocked === 'number') return Object.assign(base, s);
+    } catch (e) { /* sin almacenamiento */ }
+    return base;
+  })();
+  function persist() { try { localStorage.setItem(STORE_KEY, JSON.stringify(save)); } catch (e) { /* ignorar */ } }
+  // Trucos en la URL, separados por coma: #todos (desbloquea los 34), #turn (empieza tras el Turn), #test (cápsulas en cada ladrillo)
+  const FLAGS = new Set(location.hash.slice(1).split(','));
+  const TEST = FLAGS.has('test');
+  const FORCE_TURN = FLAGS.has('turn');
+  if (FLAGS.has('todos')) { save.unlocked = N_LEVELS; persist(); }
+
+  /* ================= Utilidades ================= */
+  const $ = id => document.getElementById(id);
+  const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+  const rnd = (a, b) => a + Math.random() * (b - a);
+  const fmt = n => String(n).padStart(6, '0');
+
+  /* ================= Sonido ================= */
+  let AC = null;
+  function audioInit() {
+    try {
+      if (!AC) AC = new (window.AudioContext || window.webkitAudioContext)();
+      if (AC.state === 'suspended') AC.resume();
+    } catch (e) { AC = null; }
+  }
+  function tone(f, d, type = 'square', v = 0.06, delay = 0, f2 = null) {
+    if (!AC || !save.sfx) return;
+    const t = AC.currentTime + delay;
+    const o = AC.createOscillator(), g = AC.createGain();
+    o.type = type;
+    o.frequency.setValueAtTime(f, t);
+    if (f2) o.frequency.exponentialRampToValueAtTime(f2, t + d);
+    g.gain.setValueAtTime(0.0001, t);
+    g.gain.exponentialRampToValueAtTime(v, t + 0.008);
+    g.gain.exponentialRampToValueAtTime(0.0001, t + d);
+    o.connect(g).connect(AC.destination);
+    o.start(t); o.stop(t + d + 0.03);
+  }
+  const SFX = {
+    wall: () => tone(260, 0.03, 'square', 0.03),
+    paddle: () => tone(440, 0.05, 'square', 0.05),
+    brick: () => tone(700, 0.05, 'square', 0.05, 0, 900),
+    hard: () => tone(500, 0.05, 'square', 0.05),
+    silver: () => tone(160, 0.06, 'square', 0.05),
+    cap: () => tone(880, 0.1, 'triangle', 0.08, 0, 1400),
+    shot: () => tone(1300, 0.06, 'sawtooth', 0.03, 0, 300),
+    laser: () => tone(1800, 0.05, 'sawtooth', 0.025, 0, 900),
+    boom: () => tone(140, 0.25, 'sawtooth', 0.1, 0, 30),
+    life: () => [660, 880, 1320].forEach((f, i) => tone(f, 0.12, 'triangle', 0.08, i * 0.07)),
+    lose: () => [392, 330, 262].forEach((f, i) => tone(f, 0.25, 'triangle', 0.09, i * 0.15)),
+    clear: () => [523, 659, 784, 1047].forEach((f, i) => tone(f, i === 3 ? 0.45 : 0.16, 'triangle', 0.1, i * 0.11)),
+    over: () => [330, 294, 262, 196].forEach((f, i) => tone(f, 0.3, 'triangle', 0.09, i * 0.22))
+  };
+  document.addEventListener('visibilitychange', () => {
+    if (!AC) return;
+    if (document.hidden) AC.suspend(); else if (save.sfx) AC.resume();
+    if (document.hidden && state === 'play') pause();
+  });
+
+  /* ================= Estado ================= */
+  const cv = $('cv'), ctx = cv.getContext('2d');
+  let run = null;             // { level, lap, score, lives }
+  let state = 'home';         // home | ready | play | clear | over | paused
+  let grid, balls, caps, shots, parts, paddle, powers;
+  let banner = null;          // { text, sub, t }
+  let stateTimer = 0, laserHeld = false, laserCd = 0, testIdx = 0;
+  const keys = { left: false, right: false };
+  let pointerX = null;
+
+  function ballSpeed() {
+    let v = 230 + (run.level - 1) * 5;
+    if (run.lap === 1) v *= 1.3;
+    if (run.lap >= 2) v = 170;
+    if (powers.slow) v *= 0.7;
+    return Math.min(v, 430);
+  }
+
+  function resetPowers() {
+    powers = { long: false, slow: false, catch: false, laser: false, gun: 0, bomb: false, flip: false, wrap: false };
+    paddle.w = PADDLE_W;
+  }
+
+  function newBall(x, y, ang, stuck = false) {
+    const b = { x, y, vx: Math.sin(ang), vy: -Math.cos(ang), stuck, off: 0 };
+    return b;
+  }
+
+  function loadLevel() {
+    grid = parseLevel(run.level);
+    caps = []; shots = []; parts = [];
+    paddle = paddle || { x: W / 2, w: PADDLE_W };
+    paddle.x = W / 2;
+    resetPowers();
+    balls = [newBall(W / 2, PADDLE_Y - BALL_R, 0, true)];
+    state = 'ready';
+    banner = { text: `Nivel ${run.level}`, sub: 'Toca para lanzar', t: 0 };
+    updateTitle();
+  }
+
+  function startRun(level) {
+    run = { level, lap: FORCE_TURN ? 2 : 0, score: 0, lives: 3 };
+    save.run = { ...run }; persist();
+    show('game');
+    loadLevel();
+  }
+
+  function continueRun() {
+    run = { ...save.run };
+    show('game');
+    loadLevel();
+  }
+
+  function saveRun() { save.run = { ...run }; persist(); }
+
+  function updateTitle() {
+    $('game-title').textContent = run.lap > 0 ? `Vuelta ${run.lap + 1} · Nivel ${run.level}` : `Nivel ${run.level}`;
+  }
+
+  /* ================= Acciones ================= */
+  function launch() {
+    const stuck = balls.filter(b => b.stuck);
+    if (!stuck.length) return false;
+    stuck.forEach(b => {
+      const off = clamp(b.off / (paddle.w / 2), -1, 1);
+      const ang = Math.abs(off) < 0.1 ? rnd(-0.3, 0.3) : off * 1.0;
+      b.vx = Math.sin(ang); b.vy = -Math.cos(ang); b.stuck = false;
+    });
+    if (state === 'ready') state = 'play';
+    banner = null;
+    SFX.paddle();
+    return true;
+  }
+
+  function fire() {
+    if (state === 'ready' || balls.some(b => b.stuck)) { launch(); return; }
+    if (state !== 'play') return;
+    if (powers.gun > 0) {
+      powers.gun--;
+      shots.push({ x: paddle.x - paddle.w / 2 + 6, y: PADDLE_Y - 8, type: 'gun' });
+      shots.push({ x: paddle.x + paddle.w / 2 - 6, y: PADDLE_Y - 8, type: 'gun' });
+      SFX.shot();
+    } else if (powers.laser && laserCd <= 0) {
+      shots.push({ x: paddle.x, y: PADDLE_Y - 10, type: 'laser' });
+      laserCd = 0.14;
+      SFX.laser();
+    }
+  }
+
+  function addScore(n) { run.score += n; if (run.score > save.best) save.best = run.score; }
+
+  function spawnParts(x, y, color, n = 6) {
+    for (let i = 0; i < n; i++) parts.push({ x, y, vx: rnd(-120, 120), vy: rnd(-160, 40), t: rnd(0.25, 0.5), c: color });
+  }
+
+  function dropCap(x, y) {
+    let name;
+    if (TEST) { name = CAP_NAMES[testIdx++ % CAP_NAMES.length]; }
+    else {
+      if (Math.random() > DROP_CHANCE) return;
+      const total = CAP_NAMES.reduce((a, k) => a + CAPS[k].w, 0);
+      let r = Math.random() * total;
+      for (const k of CAP_NAMES) { r -= CAPS[k].w; if (r <= 0) { name = k; break; } }
+      name = name || 'LONG';
+    }
+    caps.push({ x, y, name });
+  }
+
+  function destroyBrick(br, pts) {
+    grid[br.r][br.c] = null;
+    addScore(pts);
+    const cx = br.c * BW + BW / 2, cy = TOP + br.r * BH + BH / 2;
+    spawnParts(cx, cy, COLORS[br.t]);
+    if (br.t !== 'S') dropCap(cx, cy);
+  }
+
+  // src: 'ball' | 'laser' | 'gun' | 'bomb'
+  function hitBrick(br, src) {
+    if (src === 'gun') { destroyBrick(br, PTS.gun); SFX.brick(); return; }
+    if (br.t === 'S') { if (src === 'ball' || src === 'laser') SFX.silver(); return; }
+    if (src === 'ball' && powers.bomb) {
+      powers.bomb = false;
+      destroyBrick(br, PTS.ball);
+      for (let dr = -1; dr <= 1; dr++) for (let dc = -1; dc <= 1; dc++) {
+        if (!dr && !dc) continue;
+        const nb = grid[br.r + dr] && grid[br.r + dr][br.c + dc];
+        if (nb && nb.t !== 'S') { nb.hp--; if (nb.hp <= 0) destroyBrick(nb, PTS.bomb); else addScore(PTS.bomb); }
+      }
+      spawnParts(br.c * BW + BW / 2, TOP + br.r * BH + BH / 2, '#f28c28', 24);
+      SFX.boom();
+      return;
+    }
+    br.hp--;
+    if (br.hp <= 0) { destroyBrick(br, PTS[src]); SFX.brick(); }
+    else { addScore(PTS[src]); SFX.hard(); }
+  }
+
+  function applyCap(name) {
+    addScore(PTS.cap);
+    SFX.cap();
+    switch (name) {
+      case 'LIFE': run.lives++; SFX.life(); break;
+      case 'LONG': powers.long = true; paddle.w = LONG_W; break;
+      case 'SLOW': powers.slow = true; break;
+      case 'CATCH': powers.catch = true; break;
+      case 'GUN': powers.gun = 3; powers.laser = false; break;
+      case 'LASER': powers.laser = true; powers.gun = 0; break;
+      case 'BOMB': powers.bomb = true; break;
+      case 'FLIP': powers.flip = !powers.flip; break;
+      case 'WRAP': powers.wrap = true; break;
+      case 'MULTI': {
+        const src = balls.find(b => !b.stuck) || balls[0];
+        if (src.stuck) launch();
+        const base = Math.atan2(src.vx, -src.vy);
+        let k = 1;
+        while (balls.length < MAX_BALLS) {
+          const ang = base + (k % 2 ? 1 : -1) * Math.ceil(k / 2) * 0.45;
+          balls.push(newBall(src.x, src.y, ang));
+          k++;
+        }
+        break;
+      }
+    }
+    banner = { text: name, sub: CAPS[name].d, t: 0, small: true };
+  }
+
+  function levelCleared() {
+    return !grid.some(row => row.some(b => b && b.t !== 'S'));
+  }
+
+  function nextLevel() {
+    run.level++;
+    if (run.level > N_LEVELS) {
+      run.level = 1; run.lap++;
+    }
+    save.unlocked = Math.max(save.unlocked, run.level);
+    saveRun();
+    loadLevel();
+    if (run.level === 1 && run.lap === 1) banner = { text: '¡Vuelta 2!', sub: 'Pasaste los 34. Ahora la bola va más rápida.', t: 0 };
+    if (run.level === 1 && run.lap === 2) banner = { text: '¡El Turn!', sub: 'Dos vueltas completas. La bola va lenta para siempre.', t: 0 };
+  }
+
+  function loseLife() {
+    run.lives--;
+    resetPowers();
+    shots = []; caps = [];
+    if (run.lives <= 0) {
+      SFX.over();
+      state = 'over';
+      save.run = null; persist();
+      setTimeout(showGameOver, 700);
+      return;
+    }
+    SFX.lose();
+    saveRun();
+    paddle.x = clamp(paddle.x, paddle.w / 2, W - paddle.w / 2);
+    balls = [newBall(paddle.x, PADDLE_Y - BALL_R, 0, true)];
+    state = 'ready';
+    banner = { text: run.lives === 1 ? 'Última vida' : `${run.lives} vidas`, sub: 'Toca para lanzar', t: 0 };
+  }
+
+  /* ================= Simulación ================= */
+  const DT = 1 / 120;
+  let acc = 0, last = 0;
+
+  function paddleCenters() {
+    if (!powers.wrap) return [paddle.x];
+    return [paddle.x, paddle.x - W, paddle.x + W];
+  }
+
+  function stepPaddle(dt) {
+    const dir = (keys.right ? 1 : 0) - (keys.left ? 1 : 0);
+    let target = null;
+    if (pointerX !== null) target = powers.flip ? W - pointerX : pointerX;
+    if (dir) { paddle.x += dir * (powers.flip ? -1 : 1) * 560 * dt; pointerX = null; }
+    else if (target !== null) {
+      // suavizado ligero para que no salte con el dedo
+      paddle.x += (target - paddle.x) * Math.min(1, dt * 30);
+    }
+    if (powers.wrap) {
+      if (paddle.x < 0) paddle.x += W;
+      if (paddle.x >= W) paddle.x -= W;
+    } else {
+      paddle.x = clamp(paddle.x, paddle.w / 2, W - paddle.w / 2);
+    }
+  }
+
+  function stepBall(b, dt) {
+    if (b.stuck) { b.x = paddle.x + b.off; b.y = PADDLE_Y - BALL_R; return true; }
+    const sp = ballSpeed();
+    const m = Math.hypot(b.vx, b.vy) || 1;
+    b.vx = b.vx / m * sp; b.vy = b.vy / m * sp;
+    // evitar trayectorias casi horizontales que nunca bajan
+    if (Math.abs(b.vy) < sp * 0.18) { b.vy = (b.vy < 0 ? -1 : 1) * sp * 0.18; const k = Math.sqrt(sp * sp - b.vy * b.vy); b.vx = Math.sign(b.vx || 1) * k; }
+    const n = Math.ceil(sp * dt / 3);
+    const sdt = dt / n;
+    for (let i = 0; i < n; i++) {
+      const px = b.x, py = b.y;
+      b.x += b.vx * sdt; b.y += b.vy * sdt;
+      if (b.x < BALL_R) { b.x = BALL_R; b.vx = Math.abs(b.vx); SFX.wall(); }
+      if (b.x > W - BALL_R) { b.x = W - BALL_R; b.vx = -Math.abs(b.vx); SFX.wall(); }
+      if (b.y < WALL_Y + BALL_R) { b.y = WALL_Y + BALL_R; b.vy = Math.abs(b.vy); SFX.wall(); }
+      // ladrillos
+      const c0 = clamp(Math.floor((b.x - BALL_R) / BW), 0, COLS - 1), c1 = clamp(Math.floor((b.x + BALL_R) / BW), 0, COLS - 1);
+      const r0 = clamp(Math.floor((b.y - BALL_R - TOP) / BH), 0, ROWS - 1), r1 = clamp(Math.floor((b.y + BALL_R - TOP) / BH), 0, ROWS - 1);
+      let hit = null;
+      for (let r = r0; r <= r1 && !hit; r++) for (let c = c0; c <= c1 && !hit; c++) {
+        const br = grid[r][c];
+        if (!br) continue;
+        const bx = c * BW, by = TOP + r * BH;
+        const nx = clamp(b.x, bx, bx + BW), ny = clamp(b.y, by, by + BH);
+        if ((b.x - nx) ** 2 + (b.y - ny) ** 2 < BALL_R * BALL_R) hit = { br, bx, by };
+      }
+      if (hit) {
+        const { br, bx, by } = hit;
+        const fromSide = px + BALL_R <= bx || px - BALL_R >= bx + BW;
+        const fromVert = py + BALL_R <= by || py - BALL_R >= by + BH;
+        if (fromSide && !fromVert) { b.vx = -b.vx; b.x = b.vx > 0 ? bx + BW + BALL_R : bx - BALL_R; }
+        else if (fromVert) { b.vy = -b.vy; b.y = b.vy > 0 ? by + BH + BALL_R : by - BALL_R; }
+        else { b.vx = -b.vx; b.vy = -b.vy; }
+        hitBrick(br, 'ball');
+        break;
+      }
+      // paleta
+      if (b.vy > 0 && b.y + BALL_R >= PADDLE_Y && py + BALL_R <= PADDLE_Y + PADDLE_H) {
+        for (const cx of paddleCenters()) {
+          if (b.x >= cx - paddle.w / 2 - BALL_R && b.x <= cx + paddle.w / 2 + BALL_R) {
+            const off = clamp((b.x - cx) / (paddle.w / 2), -1, 1);
+            const ang = off * 1.05;
+            b.vx = Math.sin(ang) * sp; b.vy = -Math.cos(ang) * sp; b.y = PADDLE_Y - BALL_R;
+            if (powers.catch) { b.stuck = true; b.off = clamp(b.x - cx, -paddle.w / 2, paddle.w / 2); banner = { text: '', sub: 'Toca para relanzar', t: 0, small: true }; }
+            SFX.paddle();
+            break;
+          }
+        }
+      }
+      if (b.y - BALL_R > H) return false;
+    }
+    return true;
+  }
+
+  function stepShots(dt) {
+    for (let i = shots.length - 1; i >= 0; i--) {
+      const s = shots[i];
+      s.y -= (s.type === 'gun' ? 480 : 640) * dt;
+      if (s.y < WALL_Y) { shots.splice(i, 1); continue; }
+      const c = clamp(Math.floor(s.x / BW), 0, COLS - 1), r = Math.floor((s.y - TOP) / BH);
+      if (r < 0 || r >= ROWS) continue;
+      const br = grid[r][c];
+      if (br) { hitBrick(br, s.type); shots.splice(i, 1); }
+    }
+  }
+
+  function stepCaps(dt) {
+    for (let i = caps.length - 1; i >= 0; i--) {
+      const c = caps[i];
+      c.y += CAP_SPEED * dt;
+      if (c.y - CAP_H / 2 > H) { caps.splice(i, 1); continue; }
+      if (c.y + CAP_H / 2 >= PADDLE_Y && c.y - CAP_H / 2 <= PADDLE_Y + PADDLE_H) {
+        for (const cx of paddleCenters()) {
+          if (c.x + CAP_W / 2 >= cx - paddle.w / 2 && c.x - CAP_W / 2 <= cx + paddle.w / 2) { applyCap(c.name); caps.splice(i, 1); break; }
+        }
+      }
+    }
+  }
+
+  function stepParts(dt) {
+    for (let i = parts.length - 1; i >= 0; i--) {
+      const p = parts[i];
+      p.t -= dt; p.x += p.vx * dt; p.y += p.vy * dt; p.vy += 500 * dt;
+      if (p.t <= 0) parts.splice(i, 1);
+    }
+  }
+
+  function step(dt) {
+    if (banner) banner.t += dt;
+    if (banner && banner.small && banner.t > 1.4) banner = null;
+    stepParts(dt);
+    if (state === 'ready') { stepPaddle(dt); balls.forEach(b => stepBall(b, dt)); return; }
+    if (state === 'clear') {
+      stateTimer -= dt;
+      if (stateTimer <= 0) nextLevel();
+      return;
+    }
+    if (state !== 'play') return;
+    stepPaddle(dt);
+    laserCd -= dt;
+    if (laserHeld && powers.laser) fire();
+    for (let i = balls.length - 1; i >= 0; i--) if (!stepBall(balls[i], dt)) balls.splice(i, 1);
+    stepShots(dt);
+    stepCaps(dt);
+    if (levelCleared()) {
+      state = 'clear'; stateTimer = 1.3;
+      banner = { text: `¡Nivel ${run.level} listo!`, sub: '', t: 0 };
+      SFX.clear();
+      return;
+    }
+    if (!balls.length) loseLife();
+  }
+
+  /* ================= Dibujo ================= */
+  function rrect(x, y, w, h, r) {
+    ctx.beginPath();
+    ctx.moveTo(x + r, y); ctx.arcTo(x + w, y, x + w, y + h, r); ctx.arcTo(x + w, y + h, x, y + h, r);
+    ctx.arcTo(x, y + h, x, y, r); ctx.arcTo(x, y, x + w, y, r); ctx.closePath();
+  }
+
+  function drawBrick(br) {
+    const x = br.c * BW, y = TOP + br.r * BH;
+    let col = COLORS[br.t];
+    ctx.fillStyle = col;
+    ctx.fillRect(x + 1, y + 1, BW - 2, BH - 2);
+    ctx.fillStyle = 'rgba(255,255,255,.28)';
+    ctx.fillRect(x + 1, y + 1, BW - 2, 2);
+    ctx.fillRect(x + 1, y + 1, 2, BH - 2);
+    ctx.fillStyle = 'rgba(0,0,0,.3)';
+    ctx.fillRect(x + 1, y + BH - 3, BW - 2, 2);
+    ctx.fillRect(x + BW - 3, y + 1, 2, BH - 2);
+    if (br.t === 'S') {
+      ctx.fillStyle = 'rgba(255,255,255,.35)';
+      ctx.fillRect(x + 6, y + 4, 10, 2);
+      ctx.fillStyle = 'rgba(0,0,0,.25)';
+      ctx.fillRect(x + 1, y + BH / 2, BW - 2, 1);
+      ctx.fillRect(x + BW / 2, y + 1, 1, BH / 2);
+      ctx.fillRect(x + BW / 4, y + BH / 2, 1, BH / 2);
+      ctx.fillRect(x + 3 * BW / 4, y + BH / 2, 1, BH / 2);
+    } else if (br.max > 1) {
+      const dmg = br.max - br.hp;
+      ctx.strokeStyle = 'rgba(0,0,0,.55)'; ctx.lineWidth = 1.2;
+      ctx.beginPath();
+      if (dmg >= 1) { ctx.moveTo(x + 8, y + 3); ctx.lineTo(x + 15, y + 9); ctx.lineTo(x + 11, y + 15); }
+      if (dmg >= 2) { ctx.moveTo(x + 30, y + 2); ctx.lineTo(x + 24, y + 8); ctx.lineTo(x + 29, y + 16); ctx.moveTo(x + 20, y + 9); ctx.lineTo(x + 24, y + 8); }
+      ctx.stroke();
+      ctx.fillStyle = 'rgba(255,255,255,.75)';
+      ctx.font = 'bold 9px ui-monospace, Menlo, Consolas, monospace';
+      ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      ctx.fillText(String(br.hp), x + BW / 2, y + BH / 2 + 0.5);
+    }
+  }
+
+  function drawPaddle(cx) {
+    const x = cx - paddle.w / 2;
+    const g = ctx.createLinearGradient(0, PADDLE_Y, 0, PADDLE_Y + PADDLE_H);
+    g.addColorStop(0, '#dfe9ff'); g.addColorStop(0.5, '#8fb0f0'); g.addColorStop(1, '#3d5fa8');
+    ctx.fillStyle = g;
+    rrect(x, PADDLE_Y, paddle.w, PADDLE_H, 5); ctx.fill();
+    ctx.fillStyle = '#e0343a';
+    ctx.fillRect(x + 2, PADDLE_Y + 2, 6, PADDLE_H - 4);
+    ctx.fillRect(x + paddle.w - 8, PADDLE_Y + 2, 6, PADDLE_H - 4);
+    if (powers.catch) { ctx.fillStyle = '#2bb3a8'; ctx.fillRect(x + 10, PADDLE_Y - 2, paddle.w - 20, 2); }
+    if (powers.laser || powers.gun > 0) {
+      ctx.fillStyle = powers.laser ? '#e0343a' : '#f2d038';
+      ctx.fillRect(x + 4, PADDLE_Y - 5, 3, 5);
+      ctx.fillRect(x + paddle.w - 7, PADDLE_Y - 5, 3, 5);
+    }
+  }
+
+  function drawHUD() {
+    ctx.fillStyle = '#0a0d17';
+    ctx.fillRect(0, 0, W, WALL_Y);
+    ctx.fillStyle = '#2a3560';
+    ctx.fillRect(0, WALL_Y - 2, W, 2);
+    ctx.font = 'bold 14px ui-monospace, Menlo, Consolas, monospace';
+    ctx.textBaseline = 'middle';
+    ctx.textAlign = 'left'; ctx.fillStyle = '#f2d038';
+    ctx.fillText('PUNTOS ' + fmt(run.score), 10, 15);
+    ctx.textAlign = 'center'; ctx.fillStyle = '#9fb3ff';
+    ctx.fillText((run.lap ? 'V' + (run.lap + 1) + ' · ' : '') + 'NIVEL ' + run.level, W / 2 + 10, 15);
+    // vidas: paletitas
+    const n = Math.min(run.lives, 6);
+    for (let i = 0; i < n; i++) { ctx.fillStyle = '#8fb0f0'; rrect(W - 12 - (i + 1) * 20, 12, 16, 6, 3); ctx.fill(); }
+    if (run.lives > 6) { ctx.textAlign = 'right'; ctx.fillStyle = '#8fb0f0'; ctx.font = 'bold 12px ui-monospace, monospace'; ctx.fillText('×' + run.lives, W - 12 - 6 * 20 - 4, 15); }
+  }
+
+  function drawPowers() {
+    const tags = [];
+    if (powers.laser) tags.push(['LASER', CAPS.LASER.c]);
+    if (powers.gun) tags.push(['GUN×' + powers.gun, CAPS.GUN.c]);
+    if (powers.bomb) tags.push(['BOMB', CAPS.BOMB.c]);
+    if (powers.catch) tags.push(['CATCH', CAPS.CATCH.c]);
+    if (powers.long) tags.push(['LONG', CAPS.LONG.c]);
+    if (powers.slow) tags.push(['SLOW', CAPS.SLOW.c]);
+    if (powers.wrap) tags.push(['WRAP', CAPS.WRAP.c]);
+    if (powers.flip) tags.push(['FLIP', CAPS.FLIP.c]);
+    if (!tags.length) return;
+    ctx.font = 'bold 10px ui-monospace, Menlo, Consolas, monospace';
+    ctx.textAlign = 'left'; ctx.textBaseline = 'middle';
+    let x = 8;
+    for (const [t, c] of tags) {
+      const w = ctx.measureText(t).width + 12;
+      ctx.fillStyle = c; rrect(x, H - 22, w, 14, 7); ctx.fill();
+      ctx.fillStyle = '#111'; ctx.fillText(t, x + 6, H - 15);
+      x += w + 6;
+    }
+  }
+
+  function draw() {
+    ctx.clearRect(0, 0, W, H);
+    ctx.fillStyle = '#000'; ctx.fillRect(0, 0, W, H);
+    if (!run) return;
+    for (const row of grid) for (const br of row) if (br) drawBrick(br);
+    for (const c of caps) {
+      ctx.fillStyle = CAPS[c.name].c;
+      rrect(c.x - CAP_W / 2, c.y - CAP_H / 2, CAP_W, CAP_H, 7); ctx.fill();
+      ctx.fillStyle = 'rgba(255,255,255,.35)'; ctx.fillRect(c.x - CAP_W / 2 + 4, c.y - CAP_H / 2 + 2, CAP_W - 8, 2);
+      ctx.fillStyle = '#111'; ctx.font = 'bold 8px ui-monospace, Menlo, Consolas, monospace';
+      ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      ctx.fillText(c.name, c.x, c.y + 0.5);
+    }
+    for (const s of shots) {
+      if (s.type === 'gun') { ctx.fillStyle = '#f2d038'; ctx.fillRect(s.x - 2, s.y - 5, 4, 10); }
+      else { ctx.fillStyle = '#ff5a5a'; ctx.fillRect(s.x - 1, s.y - 8, 2, 16); ctx.fillStyle = 'rgba(255,90,90,.35)'; ctx.fillRect(s.x - 3, s.y - 8, 6, 16); }
+    }
+    for (const p of parts) { ctx.globalAlpha = Math.min(1, p.t * 3); ctx.fillStyle = p.c; ctx.fillRect(p.x - 2, p.y - 2, 4, 4); }
+    ctx.globalAlpha = 1;
+    for (const cx of paddleCenters()) drawPaddle(cx);
+    for (const b of balls) {
+      ctx.fillStyle = 'rgba(255,255,255,.25)'; ctx.beginPath(); ctx.arc(b.x, b.y, BALL_R + 2, 0, Math.PI * 2); ctx.fill();
+      ctx.fillStyle = '#fff'; ctx.beginPath(); ctx.arc(b.x, b.y, BALL_R, 0, Math.PI * 2); ctx.fill();
+    }
+    drawPowers();
+    drawHUD();
+    if (banner) {
+      const a = banner.small ? Math.min(1, (1.4 - banner.t) * 3) : 1;
+      ctx.globalAlpha = Math.max(0, a);
+      const y = banner.small ? H - 70 : H / 2 + 40;
+      ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      if (banner.text) {
+        ctx.fillStyle = 'rgba(0,0,0,.6)'; rrect(W / 2 - 130, y - 30, 260, 56, 10); ctx.fill();
+        ctx.font = 'bold 26px "Fredoka", sans-serif'; ctx.fillStyle = '#f2d038';
+        ctx.fillText(banner.text, W / 2, y - 8);
+        ctx.font = 'bold 12px "Nunito", sans-serif'; ctx.fillStyle = '#c9d2f5';
+        ctx.fillText(banner.sub, W / 2, y + 14);
+      } else {
+        ctx.font = 'bold 12px "Nunito", sans-serif'; ctx.fillStyle = '#c9d2f5';
+        ctx.fillText(banner.sub, W / 2, y);
+      }
+      ctx.globalAlpha = 1;
+    }
+  }
+
+  function frame(t) {
+    requestAnimationFrame(frame);
+    if (!last) last = t;
+    let dt = Math.min(0.1, (t - last) / 1000);
+    last = t;
+    if (state === 'paused' || state === 'over' || state === 'home') { draw(); return; }
+    acc += dt;
+    while (acc >= DT) { step(DT); acc -= DT; if (state === 'paused' || state === 'over') break; }
+    draw();
+  }
+
+  /* ================= Pantallas y modales ================= */
+  function show(id) {
+    for (const s of ['home', 'levels', 'game']) $(s).hidden = s !== id;
+    if (id === 'home') { state = 'home'; refreshHome(); }
+    if (id === 'levels') buildLevels();
+  }
+
+  function refreshHome() {
+    $('home-best').textContent = save.best;
+    $('home-unlocked').textContent = save.unlocked;
+    const has = !!save.run;
+    $('btn-continue').hidden = !has;
+    if (has) $('continue-info').textContent = `Nivel ${save.run.level}${save.run.lap ? ' · vuelta ' + (save.run.lap + 1) : ''} · ${save.run.score} pts · ${save.run.lives} vidas`;
+    $('btn-play').textContent = has ? 'Nueva partida' : 'Jugar';
+  }
+
+  function buildLevels() {
+    const g = $('levels-grid');
+    g.innerHTML = '';
+    for (let i = 1; i <= N_LEVELS; i++) {
+      const b = document.createElement('button');
+      b.className = 'lvl' + (i < save.unlocked ? ' done' : '');
+      b.textContent = i;
+      b.disabled = i > save.unlocked;
+      b.addEventListener('click', () => { audioInit(); startRun(i); });
+      g.appendChild(b);
+    }
+  }
+
+  function modal(html) { $('modal-card').innerHTML = html; $('modal').hidden = false; }
+  function closeModal() { $('modal').hidden = true; }
+
+  function pause() {
+    if (state !== 'play' && state !== 'ready') return;
+    state = 'paused'; laserHeld = false;
+    modal(`<h2>Pausa</h2><p>Nivel ${run.level} · ${run.score} puntos</p>
+      <button class="btn" id="m-resume">Seguir</button>
+      <button class="btn alt" id="m-restart">Reiniciar nivel</button>
+      <button class="btn alt" id="m-home">Salir al inicio</button>`);
+    $('m-resume').onclick = () => { closeModal(); state = balls.some(b => b.stuck) ? 'ready' : 'play'; };
+    $('m-restart').onclick = () => { closeModal(); loadLevel(); };
+    $('m-home').onclick = () => { closeModal(); saveRun(); show('home'); };
+  }
+
+  function showGameOver() {
+    const record = run.score >= save.best && run.score > 0;
+    persist();
+    modal(`<h2>Fin del juego</h2><p>${record ? '¡Nuevo récord!' : 'Llegaste al nivel ' + run.level}</p>
+      <div class="big">${run.score}</div>
+      <button class="btn" id="m-again">Jugar de nuevo</button>
+      <button class="btn alt" id="m-home">Inicio</button>`);
+    $('m-again').onclick = () => { closeModal(); startRun(1); };
+    $('m-home').onclick = () => { closeModal(); show('home'); };
+  }
+
+  /* ================= Entrada ================= */
+  function canvasX(e) {
+    const r = cv.getBoundingClientRect();
+    return (e.clientX - r.left) * W / r.width;
+  }
+  let downX = 0, moved = false;
+  cv.addEventListener('pointerdown', e => {
+    e.preventDefault(); audioInit();
+    cv.setPointerCapture(e.pointerId);
+    pointerX = canvasX(e); downX = e.clientX; moved = false;
+    laserHeld = true;
+    if (e.pointerType === 'mouse') fire();
+  });
+  cv.addEventListener('pointermove', e => {
+    if (e.pressure === 0 && e.pointerType !== 'mouse' && !e.buttons) return;
+    pointerX = canvasX(e);
+    if (Math.abs(e.clientX - downX) > 8) moved = true;
+  });
+  const up = e => {
+    laserHeld = false;
+    if (e.pointerType !== 'mouse' && !moved) fire();
+  };
+  cv.addEventListener('pointerup', up);
+  cv.addEventListener('pointercancel', () => { laserHeld = false; });
+  cv.addEventListener('contextmenu', e => e.preventDefault());
+
+  document.addEventListener('keydown', e => {
+    if ($('game').hidden) return;
+    if (e.key === 'ArrowLeft' || e.key === 'a' || e.key === 'A') { keys.left = true; e.preventDefault(); }
+    if (e.key === 'ArrowRight' || e.key === 'd' || e.key === 'D') { keys.right = true; e.preventDefault(); }
+    if (e.key === ' ' || e.key === 'ArrowUp') { e.preventDefault(); if (!e.repeat) { audioInit(); fire(); } laserHeld = true; }
+    if (e.key === 'p' || e.key === 'P' || e.key === 'Escape') { if (state === 'paused') { $('m-resume').click(); } else pause(); }
+  });
+  document.addEventListener('keyup', e => {
+    if (e.key === 'ArrowLeft' || e.key === 'a' || e.key === 'A') keys.left = false;
+    if (e.key === 'ArrowRight' || e.key === 'd' || e.key === 'D') keys.right = false;
+    if (e.key === ' ' || e.key === 'ArrowUp') laserHeld = false;
+  });
+
+  /* ================= Botones ================= */
+  const SOUND_ON = '<svg viewBox="0 0 24 24"><path d="M3 9h4l5-5v16l-5-5H3zM16 7.5a6 6 0 0 1 0 9l-1.4-1.4a4 4 0 0 0 0-6.2zM18.8 4.7a10 10 0 0 1 0 14.6l-1.4-1.4a8 8 0 0 0 0-11.8z"/></svg>';
+  const SOUND_OFF = '<svg viewBox="0 0 24 24"><path d="M3 9h4l5-5v16l-5-5H3zM15.6 8.6 18 11l2.4-2.4 1.4 1.4-2.4 2.4 2.4 2.4-1.4 1.4-2.4-2.4-2.4 2.4-1.4-1.4 2.4-2.4-2.4-2.4z"/></svg>';
+  function refreshSound() {
+    $('btn-sfx').setAttribute('aria-pressed', String(save.sfx));
+    $('btn-sfx').textContent = (save.sfx ? '🔊' : '🔇') + ' Sonido';
+    $('btn-sound2').innerHTML = save.sfx ? SOUND_ON : SOUND_OFF;
+  }
+  function toggleSound() { save.sfx = !save.sfx; persist(); refreshSound(); if (save.sfx) { audioInit(); SFX.cap(); } }
+  $('btn-sfx').addEventListener('click', toggleSound);
+  $('btn-sound2').addEventListener('click', toggleSound);
+  $('btn-play').addEventListener('click', () => { audioInit(); startRun(1); });
+  $('btn-continue').addEventListener('click', () => { audioInit(); continueRun(); });
+  $('btn-levels').addEventListener('click', () => show('levels'));
+  $('btn-levels-back').addEventListener('click', () => show('home'));
+  $('btn-pause').addEventListener('click', () => { if (state === 'paused') $('m-resume').click(); else pause(); });
+
+  // lista de cápsulas en el inicio
+  $('cap-list').innerHTML = CAP_NAMES.map(k => `<li><span class="pill" style="--c:${CAPS[k].c}">${k}</span><span>${CAPS[k].d}</span></li>`).join('');
+
+  // resolución del canvas según pantalla
+  function resize() {
+    const dpr = Math.min(2, window.devicePixelRatio || 1);
+    cv.width = W * dpr; cv.height = H * dpr;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+  window.addEventListener('resize', resize);
+  resize();
+  refreshSound();
+  show('home');
+  requestAnimationFrame(frame);
+  if (TEST) window.__bb = () => ({ balls, caps, powers, run, state, paddle, shots, bricks: grid.flat().filter(Boolean).length, fire, applyCap, loseLife, clearLevel: () => grid.forEach(r => r.forEach((b, i) => { if (b && b.t !== 'S') r[i] = null; })) });
+})();
+</script>
+</body>
+</html>
