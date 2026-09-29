@@ -19,7 +19,7 @@ Tobi es un osito que adora la miel. Un día encuentra el tarro más grande que h
 
 "Tobi, el osito que compartía" es un cuento corto y sencillo para leer en familia, con ilustraciones a todo color, grandes y alegres, y una enseñanza sobre la generosidad y la amistad. Cada libro de la colección Amiguitos del Bosque termina con una página de reflexión y una pregunta para conversar con los niños.
 
-Ideal para de 3 a 7 años, para la hora de dormir, para primeros lectores y para trabajar valores en casa o en el aula. 18 escenas ilustradas, texto en español claro y con letra grande.
+Ideal para niños de 3 a 7 años, para la hora de dormir, para primeros lectores y para trabajar valores en casa o en el aula. 18 escenas ilustradas, texto en español claro y con letra grande.
 
 ---
 
@@ -40,7 +40,7 @@ Tina, la tortuga, planta una semilla diminuta y la cuida cada día, aunque nadie
 
 "Tina, la tortuga paciente" es un cuento corto y sencillo para leer en familia, con ilustraciones a todo color, grandes y alegres, y una enseñanza sobre la paciencia y la constancia. Cada libro de la colección Amiguitos del Bosque termina con una página de reflexión y una pregunta para conversar con los niños.
 
-Ideal para de 3 a 7 años, para la hora de dormir, para primeros lectores y para trabajar valores en casa o en el aula. 18 escenas ilustradas, texto en español claro y con letra grande.
+Ideal para niños de 3 a 7 años, para la hora de dormir, para primeros lectores y para trabajar valores en casa o en el aula. 18 escenas ilustradas, texto en español claro y con letra grande.
 
 ---
 
@@ -61,7 +61,7 @@ Nico es un conejo alegre de día, pero cuando llega la noche siente mucho miedo.
 
 "Nico, el conejo valiente" es un cuento corto y sencillo para leer en familia, con ilustraciones a todo color, grandes y alegres, y una enseñanza sobre la valentía y la empatía. Cada libro de la colección Amiguitos del Bosque termina con una página de reflexión y una pregunta para conversar con los niños.
 
-Ideal para de 3 a 7 años, para la hora de dormir, para primeros lectores y para trabajar valores en casa o en el aula. 18 escenas ilustradas, texto en español claro y con letra grande.
+Ideal para niños de 3 a 7 años, para la hora de dormir, para primeros lectores y para trabajar valores en casa o en el aula. 18 escenas ilustradas, texto en español claro y con letra grande.
 
 ---
 
@@ -82,7 +82,7 @@ Luz es una estrellita que ilumina el bosque cada noche. Pero una noche se siente
 
 "La estrellita que perdió su brillo" es un cuento corto y sencillo para leer en familia, con ilustraciones a todo color, grandes y alegres, y una enseñanza sobre la amabilidad y la amistad. Cada libro de la colección Amiguitos del Bosque termina con una página de reflexión y una pregunta para conversar con los niños.
 
-Ideal para de 3 a 7 años, para la hora de dormir, para primeros lectores y para trabajar valores en casa o en el aula. 18 escenas ilustradas, texto en español claro y con letra grande.
+Ideal para niños de 3 a 7 años, para la hora de dormir, para primeros lectores y para trabajar valores en casa o en el aula. 18 escenas ilustradas, texto en español claro y con letra grande.
 
 ---
 
@@ -103,7 +103,7 @@ Bubu es un pececito naranja que sueña con volar como su amigo Pipo. Salta y sal
 
 "Bubu, el pez que quería volar" es un cuento corto y sencillo para leer en familia, con ilustraciones a todo color, grandes y alegres, y una enseñanza sobre la autoestima y aceptarse a uno mismo. Cada libro de la colección Amiguitos del Bosque termina con una página de reflexión y una pregunta para conversar con los niños.
 
-Ideal para de 3 a 7 años, para la hora de dormir, para primeros lectores y para trabajar valores en casa o en el aula. 18 escenas ilustradas, texto en español claro y con letra grande.
+Ideal para niños de 3 a 7 años, para la hora de dormir, para primeros lectores y para trabajar valores en casa o en el aula. 18 escenas ilustradas, texto en español claro y con letra grande.
 
 ---
 
@@ -124,7 +124,7 @@ Dumbi, el elefante, cree que Ani, la hormiga, es demasiado pequeña para hacer a
 
 "Dumbi y la hormiga Ani" es un cuento corto y sencillo para leer en familia, con ilustraciones a todo color, grandes y alegres, y una enseñanza sobre el respeto y la cooperación. Cada libro de la colección Amiguitos del Bosque termina con una página de reflexión y una pregunta para conversar con los niños.
 
-Ideal para de 3 a 7 años, para la hora de dormir, para primeros lectores y para trabajar valores en casa o en el aula. 18 escenas ilustradas, texto en español claro y con letra grande.
+Ideal para niños de 3 a 7 años, para la hora de dormir, para primeros lectores y para trabajar valores en casa o en el aula. 18 escenas ilustradas, texto en español claro y con letra grande.
 
 ---
 
@@ -145,7 +145,7 @@ Fito es un zorro muy listo, pero muy mandón: "¡Dame eso!", "¡Quítate!". Cuan
 
 "Fito, el zorro y las palabras mágicas" es un cuento corto y sencillo para leer en familia, con ilustraciones a todo color, grandes y alegres, y una enseñanza sobre la cortesía y el respeto. Cada libro de la colección Amiguitos del Bosque termina con una página de reflexión y una pregunta para conversar con los niños.
 
-Ideal para de 3 a 7 años, para la hora de dormir, para primeros lectores y para trabajar valores en casa o en el aula. 18 escenas ilustradas, texto en español claro y con letra grande.
+Ideal para niños de 3 a 7 años, para la hora de dormir, para primeros lectores y para trabajar valores en casa o en el aula. 18 escenas ilustradas, texto en español claro y con letra grande.
 
 ---
 
@@ -166,7 +166,7 @@ Nube amanece gris y gruñona sin saber por qué. Cuando por fin llora, arruina e
 
 "Nube, la nubecita gruñona" es un cuento corto y sencillo para leer en familia, con ilustraciones a todo color, grandes y alegres, y una enseñanza sobre las emociones y la gestión de la tristeza. Cada libro de la colección Amiguitos del Bosque termina con una página de reflexión y una pregunta para conversar con los niños.
 
-Ideal para de 3 a 7 años, para la hora de dormir, para primeros lectores y para trabajar valores en casa o en el aula. 18 escenas ilustradas, texto en español claro y con letra grande.
+Ideal para niños de 3 a 7 años, para la hora de dormir, para primeros lectores y para trabajar valores en casa o en el aula. 18 escenas ilustradas, texto en español claro y con letra grande.
 
 ---
 
@@ -187,7 +187,7 @@ Misu, la gatita, encuentra un jardín triste, lleno de basura y sin flores. Con 
 
 "Misu y el jardín" es un cuento corto y sencillo para leer en familia, con ilustraciones a todo color, grandes y alegres, y una enseñanza sobre el cuidado del medio ambiente. Cada libro de la colección Amiguitos del Bosque termina con una página de reflexión y una pregunta para conversar con los niños.
 
-Ideal para de 3 a 7 años, para la hora de dormir, para primeros lectores y para trabajar valores en casa o en el aula. 18 escenas ilustradas, texto en español claro y con letra grande.
+Ideal para niños de 3 a 7 años, para la hora de dormir, para primeros lectores y para trabajar valores en casa o en el aula. 18 escenas ilustradas, texto en español claro y con letra grande.
 
 ---
 
@@ -208,7 +208,7 @@ Pincho es un erizo que solo quiere un abrazo, pero sus púas pinchan a todos. Se
 
 "Pincho, el erizo que quería un abrazo" es un cuento corto y sencillo para leer en familia, con ilustraciones a todo color, grandes y alegres, y una enseñanza sobre la inclusión y la amistad. Cada libro de la colección Amiguitos del Bosque termina con una página de reflexión y una pregunta para conversar con los niños.
 
-Ideal para de 3 a 7 años, para la hora de dormir, para primeros lectores y para trabajar valores en casa o en el aula. 18 escenas ilustradas, texto en español claro y con letra grande.
+Ideal para niños de 3 a 7 años, para la hora de dormir, para primeros lectores y para trabajar valores en casa o en el aula. 18 escenas ilustradas, texto en español claro y con letra grande.
 
 ---
 
@@ -229,7 +229,7 @@ Tobi es un osito que adora la miel. Un día encuentra el tarro más grande que h
 
 Esta es la versión para colorear de "Tobi, el osito que compartía": 18 escenas del cuento en trazo negro, limpio y grueso, listas para pintar con crayones, colores o marcadores. Cada página incluye el texto del cuento, así que los niños colorean mientras leen o escuchan la historia, y al final encuentran la enseñanza sobre la generosidad y la amistad y un espacio para su propio dibujo.
 
-Recomendado para de 3 a 7 años. Formato grande, una ilustración por página, impresa por una sola cara para que los colores no traspasen. Parte de la colección Amiguitos del Bosque.
+Recomendado para niños de 3 a 7 años. Formato grande, una ilustración por página, impresa por una sola cara para que los colores no traspasen. Parte de la colección Amiguitos del Bosque.
 
 ---
 
@@ -250,7 +250,7 @@ Tina, la tortuga, planta una semilla diminuta y la cuida cada día, aunque nadie
 
 Esta es la versión para colorear de "Tina, la tortuga paciente": 18 escenas del cuento en trazo negro, limpio y grueso, listas para pintar con crayones, colores o marcadores. Cada página incluye el texto del cuento, así que los niños colorean mientras leen o escuchan la historia, y al final encuentran la enseñanza sobre la paciencia y la constancia y un espacio para su propio dibujo.
 
-Recomendado para de 3 a 7 años. Formato grande, una ilustración por página, impresa por una sola cara para que los colores no traspasen. Parte de la colección Amiguitos del Bosque.
+Recomendado para niños de 3 a 7 años. Formato grande, una ilustración por página, impresa por una sola cara para que los colores no traspasen. Parte de la colección Amiguitos del Bosque.
 
 ---
 
@@ -271,7 +271,7 @@ Nico es un conejo alegre de día, pero cuando llega la noche siente mucho miedo.
 
 Esta es la versión para colorear de "Nico, el conejo valiente": 18 escenas del cuento en trazo negro, limpio y grueso, listas para pintar con crayones, colores o marcadores. Cada página incluye el texto del cuento, así que los niños colorean mientras leen o escuchan la historia, y al final encuentran la enseñanza sobre la valentía y la empatía y un espacio para su propio dibujo.
 
-Recomendado para de 3 a 7 años. Formato grande, una ilustración por página, impresa por una sola cara para que los colores no traspasen. Parte de la colección Amiguitos del Bosque.
+Recomendado para niños de 3 a 7 años. Formato grande, una ilustración por página, impresa por una sola cara para que los colores no traspasen. Parte de la colección Amiguitos del Bosque.
 
 ---
 
@@ -292,7 +292,7 @@ Luz es una estrellita que ilumina el bosque cada noche. Pero una noche se siente
 
 Esta es la versión para colorear de "La estrellita que perdió su brillo": 18 escenas del cuento en trazo negro, limpio y grueso, listas para pintar con crayones, colores o marcadores. Cada página incluye el texto del cuento, así que los niños colorean mientras leen o escuchan la historia, y al final encuentran la enseñanza sobre la amabilidad y la amistad y un espacio para su propio dibujo.
 
-Recomendado para de 3 a 7 años. Formato grande, una ilustración por página, impresa por una sola cara para que los colores no traspasen. Parte de la colección Amiguitos del Bosque.
+Recomendado para niños de 3 a 7 años. Formato grande, una ilustración por página, impresa por una sola cara para que los colores no traspasen. Parte de la colección Amiguitos del Bosque.
 
 ---
 
@@ -313,7 +313,7 @@ Bubu es un pececito naranja que sueña con volar como su amigo Pipo. Salta y sal
 
 Esta es la versión para colorear de "Bubu, el pez que quería volar": 18 escenas del cuento en trazo negro, limpio y grueso, listas para pintar con crayones, colores o marcadores. Cada página incluye el texto del cuento, así que los niños colorean mientras leen o escuchan la historia, y al final encuentran la enseñanza sobre la autoestima y aceptarse a uno mismo y un espacio para su propio dibujo.
 
-Recomendado para de 3 a 7 años. Formato grande, una ilustración por página, impresa por una sola cara para que los colores no traspasen. Parte de la colección Amiguitos del Bosque.
+Recomendado para niños de 3 a 7 años. Formato grande, una ilustración por página, impresa por una sola cara para que los colores no traspasen. Parte de la colección Amiguitos del Bosque.
 
 ---
 
@@ -334,7 +334,7 @@ Dumbi, el elefante, cree que Ani, la hormiga, es demasiado pequeña para hacer a
 
 Esta es la versión para colorear de "Dumbi y la hormiga Ani": 18 escenas del cuento en trazo negro, limpio y grueso, listas para pintar con crayones, colores o marcadores. Cada página incluye el texto del cuento, así que los niños colorean mientras leen o escuchan la historia, y al final encuentran la enseñanza sobre el respeto y la cooperación y un espacio para su propio dibujo.
 
-Recomendado para de 3 a 7 años. Formato grande, una ilustración por página, impresa por una sola cara para que los colores no traspasen. Parte de la colección Amiguitos del Bosque.
+Recomendado para niños de 3 a 7 años. Formato grande, una ilustración por página, impresa por una sola cara para que los colores no traspasen. Parte de la colección Amiguitos del Bosque.
 
 ---
 
@@ -355,7 +355,7 @@ Fito es un zorro muy listo, pero muy mandón: "¡Dame eso!", "¡Quítate!". Cuan
 
 Esta es la versión para colorear de "Fito, el zorro y las palabras mágicas": 18 escenas del cuento en trazo negro, limpio y grueso, listas para pintar con crayones, colores o marcadores. Cada página incluye el texto del cuento, así que los niños colorean mientras leen o escuchan la historia, y al final encuentran la enseñanza sobre la cortesía y el respeto y un espacio para su propio dibujo.
 
-Recomendado para de 3 a 7 años. Formato grande, una ilustración por página, impresa por una sola cara para que los colores no traspasen. Parte de la colección Amiguitos del Bosque.
+Recomendado para niños de 3 a 7 años. Formato grande, una ilustración por página, impresa por una sola cara para que los colores no traspasen. Parte de la colección Amiguitos del Bosque.
 
 ---
 
@@ -376,7 +376,7 @@ Nube amanece gris y gruñona sin saber por qué. Cuando por fin llora, arruina e
 
 Esta es la versión para colorear de "Nube, la nubecita gruñona": 18 escenas del cuento en trazo negro, limpio y grueso, listas para pintar con crayones, colores o marcadores. Cada página incluye el texto del cuento, así que los niños colorean mientras leen o escuchan la historia, y al final encuentran la enseñanza sobre las emociones y la gestión de la tristeza y un espacio para su propio dibujo.
 
-Recomendado para de 3 a 7 años. Formato grande, una ilustración por página, impresa por una sola cara para que los colores no traspasen. Parte de la colección Amiguitos del Bosque.
+Recomendado para niños de 3 a 7 años. Formato grande, una ilustración por página, impresa por una sola cara para que los colores no traspasen. Parte de la colección Amiguitos del Bosque.
 
 ---
 
@@ -397,7 +397,7 @@ Misu, la gatita, encuentra un jardín triste, lleno de basura y sin flores. Con 
 
 Esta es la versión para colorear de "Misu y el jardín": 18 escenas del cuento en trazo negro, limpio y grueso, listas para pintar con crayones, colores o marcadores. Cada página incluye el texto del cuento, así que los niños colorean mientras leen o escuchan la historia, y al final encuentran la enseñanza sobre el cuidado del medio ambiente y un espacio para su propio dibujo.
 
-Recomendado para de 3 a 7 años. Formato grande, una ilustración por página, impresa por una sola cara para que los colores no traspasen. Parte de la colección Amiguitos del Bosque.
+Recomendado para niños de 3 a 7 años. Formato grande, una ilustración por página, impresa por una sola cara para que los colores no traspasen. Parte de la colección Amiguitos del Bosque.
 
 ---
 
@@ -418,7 +418,7 @@ Pincho es un erizo que solo quiere un abrazo, pero sus púas pinchan a todos. Se
 
 Esta es la versión para colorear de "Pincho, el erizo que quería un abrazo": 18 escenas del cuento en trazo negro, limpio y grueso, listas para pintar con crayones, colores o marcadores. Cada página incluye el texto del cuento, así que los niños colorean mientras leen o escuchan la historia, y al final encuentran la enseñanza sobre la inclusión y la amistad y un espacio para su propio dibujo.
 
-Recomendado para de 3 a 7 años. Formato grande, una ilustración por página, impresa por una sola cara para que los colores no traspasen. Parte de la colección Amiguitos del Bosque.
+Recomendado para niños de 3 a 7 años. Formato grande, una ilustración por página, impresa por una sola cara para que los colores no traspasen. Parte de la colección Amiguitos del Bosque.
 
 ---
 
