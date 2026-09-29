@@ -6,6 +6,16 @@ const { setMode, scene, character, isLine } = require('./shapes');
 const stories = require('./stories');
 
 const OUT = path.join(__dirname, '..', 'pdf');
+const IMG = path.join(__dirname, 'img'); // img/<id>/<color|line>/<cover|1..6>.(png|jpg)
+function findImg(storyId, mode, name) {
+  const dir = path.join(IMG, storyId, mode === 'line' ? 'line' : 'color');
+  for (const ext of ['png', 'jpg', 'jpeg', 'webp']) { const f = path.join(dir, `${name}.${ext}`); if (fs.existsSync(f)) return 'file://' + f; }
+  return null;
+}
+function art(storyId, mode, name, fallbackSvg) {
+  const f = findImg(storyId, mode, name);
+  return f ? `<img src="${f}" style="display:block;width:100%;height:auto">` : fallbackSvg;
+}
 const FONTS = 'file://' + path.join(__dirname, 'fonts');
 const CSS = `
 @font-face{font-family:'Fredoka';font-weight:500;src:url('FONTS/Fredoka-Medium.ttf')}
@@ -49,14 +59,14 @@ function html(story, mode, acc) {
   let pages = '';
   pages += `<section class="page cover"><div class="frame cover" style="justify-content:center">
     <div class="kind">${kind}</div>
-    <div class="heroart art" style="border:none;background:none">${heroSVG(story.hero)}</div>
+    <div class="heroart art" style="border:none;background:none">${art(story.id, mode, 'cover', heroSVG(story.hero))}</div>
     <h1>${story.title}</h1>
     <div class="lesson">Un cuento sobre: ${story.lesson.replace(/\.$/, '').toLowerCase()}</div>
     ${line ? '<div class="colorline"><span></span><span></span><span></span><span></span><span></span></div><div class="hint" style="margin-top:4mm;color:#777">Colorea la portada como más te guste</div>' : ''}
   </div></section>`;
   story.pages.forEach((p, i) => {
     pages += `<section class="page ${line ? 'line' : ''}"><div class="frame">
-      <div class="art">${scene(p.sc)}</div>
+      <div class="art">${art(story.id, mode, String(i + 1), scene(p.sc))}</div>
       <div class="text">${p.text}</div>
     </div><div class="num">${i + 1}</div></section>`;
   });

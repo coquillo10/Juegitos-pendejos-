@@ -2,6 +2,6 @@
   "name": "cuentos-infantiles",
   "private": true,
   "description": "Generador de cuentos infantiles en PDF (color y para colorear)",
-  "scripts": { "build": "node build.js", "prompts": "node prompts.js" },
+  "scripts": { "build": "node build.js", "prompts": "node prompts.js", "download": "node download.js" },
   "dependencies": { "playwright": "^1.56.1" }
 }
