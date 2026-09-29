@@ -38,11 +38,21 @@ node prompts.js               # regenera los prompts para Higgsfield
 
 ## Ilustraciones con Higgsfield
 
-Las ilustraciones actuales son vectoriales (hechas en `src/shapes.js`). Para sustituirlas por
-imágenes o animaciones generadas con Higgsfield:
+Las 70 ilustraciones a color (10 portadas + 60 escenas) se generaron con Higgsfield
+(modelo Z Image) a partir de los prompts de `prompts-higgsfield/prompts.md` y están en
+`src/img/<cuento>/color/`. Las URL originales están en `src/manifest.json`
+(`node download.js` las vuelve a descargar).
 
-1. Conecta Higgsfield en https://claude.ai/customize/connectors y abre una sesión nueva.
-2. Usa los prompts de `prompts-higgsfield/prompts.md` (uno por escena, con estilo a color,
-   estilo para colorear y prompt de animación).
-3. Guarda las imágenes en `src/img/<id-cuento>/<pagina>.png` y ajusta `build.js` para
-   insertar la imagen en lugar del SVG de la escena.
+Las páginas para colorear (`src/img/<cuento>/line/`) se derivan de las imágenes a color con
+`python3 lineart.py` (OpenCV): contorno negro puro sobre blanco, sin grises ni color.
+
+Si falta una imagen, `build.js` usa la ilustración vectorial de respaldo de `src/shapes.js`.
+
+Flujo completo para regenerar:
+
+```bash
+cd cuentos/src
+node download.js      # descarga las imágenes a color (según manifest.json)
+python3 lineart.py    # crea las páginas para colorear
+node build.js         # genera los 20 PDF
+```

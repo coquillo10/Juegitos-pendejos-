@@ -9,7 +9,7 @@ const BGS = { forest: 'a sunny cartoon forest with round trees and pines', meado
 const PROPS = { honey: 'a big jar of golden honey', sprout: 'a small green sprout', seed: 'a tiny seed', sunflower: 'a giant sunflower', flower: 'flowers', umbrella: 'a red umbrella', peanut: 'a peanut', balloon: 'a balloon', wateringcan: 'a blue watering can', basket: 'a picnic basket', trash: 'scattered trash', rock: 'a big rock', crack: 'a narrow crack in the ground', blanket: 'a soft pink blanket', cake: 'a pink frosted cake with a candle', gift: 'a gift box', moonstar: 'a small star', heart: 'a floating red heart', acorn: 'an acorn' };
 
 const STYLE_COLOR = 'Children\'s picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.';
-const STYLE_LINE = 'Children\'s coloring book page, clean black line art on pure white background, thick smooth outlines, no shading, no color, no gray fills, simple shapes for kids age 3-7, no text, 4:3.';
+const STYLE_LINE = 'Children\'s coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.';
 const STYLE_ANIM = 'Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.';
 
 function describe(sc) {
