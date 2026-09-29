@@ -39,6 +39,9 @@ p { margin: 0; text-align: center; color: var(--muted); max-width: 40ch; }
 .game:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
 .cubes { display: grid; grid-template-columns: repeat(2, 22px); gap: 4px; }
 .cubes span { width: 22px; height: 22px; border-radius: 5px; background: var(--c); box-shadow: inset 0 -5px 0 rgba(0,0,0,.22), inset 0 2px 0 rgba(255,255,255,.28); }
+.bricks { position: relative; display: grid; grid-template-columns: repeat(2, 22px); gap: 4px; width: 48px; height: 48px; align-content: start; padding: 4px; border-radius: 8px; background: #06080f; }
+.bricks span { height: 8px; border-radius: 2px; background: var(--c); box-shadow: inset 0 -2px 0 rgba(0,0,0,.3); }
+.bricks i { position: absolute; left: 21px; bottom: 7px; width: 6px; height: 6px; border-radius: 50%; background: #fff; }
 .game strong { display: block; font-family: "Fredoka", sans-serif; font-weight: 700; font-size: 1.5rem; }
 .game span.d { color: var(--muted); font-size: .95rem; }
 .game .go { font-size: .75rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); }
@@ -54,6 +57,17 @@ p { margin: 0; text-align: center; color: var(--muted); max-width: 40ch; }
   <div>
     <strong>Bloquazo</strong>
     <span class="d">Puzle de cubos de madera. 100 niveles en 10 mundos, canicas, jefes y modo clásico.</span><br>
+    <span class="go">Jugar →</span>
+  </div>
+</a>
+<a class="game" href="brickbreaker/">
+  <div class="bricks" aria-hidden="true">
+    <span style="--c:#e0343a"></span><span style="--c:#f28c28"></span><span style="--c:#f2d038"></span><span style="--c:#3a7bf2"></span><span style="--c:#a9a9a9"></span><span style="--c:#a9a9a9"></span>
+    <i></i>
+  </div>
+  <div>
+    <strong>Brick Breaker</strong>
+    <span class="d">El clásico de BlackBerry: 34 niveles, 10 cápsulas y ladrillos plateados. Pasa los 34 y vuelve más rápido.</span><br>
     <span class="go">Jugar →</span>
   </div>
 </a>
