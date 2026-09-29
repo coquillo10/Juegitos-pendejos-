@@ -540,7 +540,7 @@ S....SS....S`
   let state = 'home';         // home | ready | play | clear | over | paused
   let grid, balls, caps, shots, parts, paddle, powers;
   let banner = null;          // { text, sub, t }
-  let stateTimer = 0, laserHeld = false, laserCd = 0, testIdx = 0;
+  let rally = 0, stateTimer = 0, laserHeld = false, laserCd = 0, testIdx = 0;
   const keys = { left: false, right: false };
   let pointerX = null;
 
@@ -549,6 +549,8 @@ S....SS....S`
     if (run.lap === 1) v *= 1.3;
     if (run.lap >= 2) v = 170;
     if (powers.slow) v *= 0.7;
+    // acelera muy poco con cada rebote en la paleta (+0,6 % por toque, tope +24 %)
+    v *= 1 + Math.min(rally, 40) * 0.006;
     return Math.min(v, 430);
   }
 
@@ -567,6 +569,7 @@ S....SS....S`
     caps = []; shots = []; parts = [];
     paddle = paddle || { x: W / 2, w: PADDLE_W };
     paddle.x = W / 2;
+    rally = 0;
     resetPowers();
     balls = [newBall(W / 2, PADDLE_Y - BALL_R, 0, true)];
     state = 'ready';
@@ -718,6 +721,7 @@ S....SS....S`
 
   function loseLife() {
     run.lives--;
+    rally = 0;
     resetPowers();
     shots = []; caps = [];
     if (run.lives <= 0) {
@@ -805,6 +809,7 @@ S....SS....S`
             const ang = off * 1.05;
             b.vx = Math.sin(ang) * sp; b.vy = -Math.cos(ang) * sp; b.y = PADDLE_Y - BALL_R;
             if (powers.catch) { b.stuck = true; b.off = clamp(b.x - cx, -paddle.w / 2, paddle.w / 2); banner = { text: '', sub: 'Toca para relanzar', t: 0, small: true }; }
+            rally++;
             SFX.paddle();
             break;
           }
@@ -1163,7 +1168,7 @@ S....SS....S`
   refreshSound();
   show('home');
   requestAnimationFrame(frame);
-  if (TEST) window.__bb = () => ({ balls, caps, powers, run, state, paddle, shots, bricks: grid.flat().filter(Boolean).length, fire, applyCap, loseLife, clearLevel: () => grid.forEach(r => r.forEach((b, i) => { if (b && b.t !== 'S') r[i] = null; })) });
+  if (TEST) window.__bb = () => ({ balls, caps, powers, run, state, paddle, rally, speed: ballSpeed(), shots, bricks: grid.flat().filter(Boolean).length, fire, applyCap, loseLife, clearLevel: () => grid.forEach(r => r.forEach((b, i) => { if (b && b.t !== 'S') r[i] = null; })) });
 })();
 </script>
 </body>
