@@ -21,15 +21,14 @@ Truco para probar: abrir con `#todos` al final de la dirección (`index.html#tod
 
 ## Brick Breaker
 
-Recreación del clásico que venía preinstalado en los BlackBerry: paleta, bola y ladrillos, metido en un "teléfono" con pantalla negra, menús de lista al estilo BlackBerry y un trackball que lanza y dispara.
+Recreación del clásico que venía preinstalado en los BlackBerry: paleta, bola y ladrillos, con estética retro de pantalla negra.
 
 - **34 niveles** diseñados a mano, con ladrillos de 1, 2 y 3 golpes y **plateados irrompibles** (solo los rompen las balas).
 - **10 cápsulas** del original: LIFE, LONG, SLOW, CATCH, GUN, LASER, BOMB, MULTI, FLIP y WRAP. Duran hasta perder una vida o pasar de nivel.
 - **Puntaje oficial**: 10 por ladrillo con la bola, 20 con láser, 50 con bala, 5 por daño de bomba y 50 por cápsula.
 - **El "Turn"**: al pasar el nivel 34 vuelves al 1 con la bola más rápida; si pasas los 34 dos veces, la bola queda lenta para siempre.
-- 3 vidas, récord, tabla de **10 mejores puntuaciones** y partida en curso guardados en el navegador (**Continuar partida**).
-- Control táctil relativo: la paleta se desliza con el dedo, no salta a donde tocas. Con ratón sigue al puntero; también flechas. Trackball, toque, clic o espacio para lanzar y disparar (mantener para el láser); tecla Menú o `P` pausa.
-- Menús navegables con flechas y Enter, como en el teléfono.
+- 3 vidas, récord y partida en curso guardados en el navegador (botón **Continuar**).
+- Control táctil relativo: la paleta se desliza con el dedo, no salta a donde tocas. Con ratón sigue al puntero; también flechas. Toque, clic o espacio para lanzar y disparar; `P` pausa.
 - Efectos de sonido generados con Web Audio.
 
 Abrir: `brickbreaker/index.html`.
