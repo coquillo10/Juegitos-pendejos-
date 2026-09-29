@@ -1,15 +1,24 @@
 # Cuentos infantiles: para leer y para colorear
 
-20 libros en PDF (tamaño A4) generados a partir de 10 cuentos cortos con una enseñanza.
+20 libros listos para imprimir y publicar, generados a partir de 10 cuentos con una enseñanza.
+Ilustraciones creadas con Higgsfield (modelo GPT Image 2.5) usando fichas de personaje como referencia,
+para que cada personaje sea el mismo en todas las páginas.
 
 | Carpeta | Contenido |
 |---|---|
-| `pdf/color/` | 10 cuentos ilustrados a color para leer con niños |
-| `pdf/colorear/` | Los mismos 10 cuentos en versión de línea para colorear |
-| `prompts-higgsfield/` | Prompts (color, colorear y animación) de cada escena, listos para Higgsfield |
-| `src/` | Generador: ilustraciones vectoriales, textos y render a PDF |
+| `pdf/color/` | 10 cuentos ilustrados a color (interior, 24 páginas A4) |
+| `pdf/colorear/` | Los mismos 10 cuentos en versión para colorear (interior, 24 páginas A4, línea negra sobre blanco) |
+| `pdf/cubiertas/` | 20 cubiertas completas: contraportada + lomo + portada, con sangrado de 0.125 in y lomo calculado para 24 páginas |
+| `registro/registro.md` y `registro.json` | Ficha de registro de cada libro: título, subtítulo, autor, sinopsis de venta, categorías y palabras clave |
+| `prompts-higgsfield/prompts.md` | Prompts usados para cada escena |
+| `src/` | Generador (Node + Playwright) e imágenes |
 
-Cada libro tiene portada, 6 páginas de historia y una página final con la enseñanza y una pregunta para conversar.
+## Estructura de cada libro (24 páginas)
+
+1. Portadilla · 2. Créditos · 3. "Este libro pertenece a" · 4. Conoce a los personajes ·
+5 a 22. Las 18 escenas del cuento con su texto · 23. La enseñanza y una pregunta · 24. "Mi dibujo del cuento".
+
+Los libros de colorear tienen las mismas 18 escenas en trazo negro, generadas a partir de la escena a color.
 
 ## Los cuentos
 
@@ -24,35 +33,21 @@ Cada libro tiene portada, 6 páginas de historia y una página final con la ense
 9. Misu y el jardín — cuidar la naturaleza.
 10. Pincho, el erizo que quería un abrazo — ser diferente.
 
-## Regenerar los PDF
+## Cambiar autor, textos o regenerar
 
-Requiere Node 18+ y Playwright con Chromium.
-
-```bash
-cd cuentos/src
-npm install playwright        # o usa una instalación global con NODE_PATH
-node build.js                 # genera los 20 PDF
-node build.js 03              # solo el cuento 03
-node prompts.js               # regenera los prompts para Higgsfield
-```
-
-## Ilustraciones con Higgsfield
-
-Las 70 ilustraciones a color (10 portadas + 60 escenas) se generaron con Higgsfield
-(modelo Z Image) a partir de los prompts de `prompts-higgsfield/prompts.md` y están en
-`src/img/<cuento>/color/`. Las URL originales están en `src/manifest.json`
-(`node download.js` las vuelve a descargar).
-
-Las páginas para colorear (`src/img/<cuento>/line/`) se derivan de las imágenes a color con
-`python3 lineart.py` (OpenCV): contorno negro puro sobre blanco, sin grises ni color.
-
-Si falta una imagen, `build.js` usa la ilustración vectorial de respaldo de `src/shapes.js`.
-
-Flujo completo para regenerar:
+- Autor (seudónimo), serie y sinopsis: `src/meta.js`.
+- Textos de los cuentos: `src/stories.js`.
+- Imágenes: `src/img/<cuento>/color/` y `src/img/<cuento>/line/` (`cover.jpg` y `1.jpg` … `18.jpg`). `src/state.json` guarda los IDs y URL de cada generación en Higgsfield.
 
 ```bash
 cd cuentos/src
-node download.js      # descarga las imágenes a color (según manifest.json)
-python3 lineart.py    # crea las páginas para colorear
-node build.js         # genera los 20 PDF
+npm install playwright     # o usa una instalación global con NODE_PATH
+node build.js              # genera interiores, cubiertas y la ficha de registro
+node build.js 03           # solo el cuento 03
 ```
+
+## Notas para la publicación
+
+- Tamaño A4 (8.27 × 11.69 in). Si la plataforma pide otro tamaño (por ejemplo 8.5 × 11 in), cambia `TRIM_W` y `TRIM_H` en `src/build.js` y vuelve a generar.
+- El lomo se calcula con el número de páginas (24) y el tipo de papel: color premium para los cuentos y papel blanco para los libros de colorear. Con menos de 79 páginas el lomo no lleva texto.
+- La cubierta deja un espacio de 2 × 1.2 in en la esquina inferior derecha de la contraportada para el código de barras del ISBN.

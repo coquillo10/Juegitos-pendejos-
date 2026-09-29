@@ -1,557 +1,216 @@
-# Prompts para Higgsfield
+# Prompts de las ilustraciones (Higgsfield · GPT Image 2.5)
 
-Cada cuento tiene una portada, 6 escenas y una página final. Para cada escena hay tres prompts:
+Cada escena a color se generó con la ficha del personaje como imagen de referencia. La página para colorear se generó a partir de la escena a color con este prompt:
 
-- **color**: ilustración a color para el cuento animado.
-- **colorear**: versión de línea para el libro de colorear (misma escena).
-- **animación**: instrucción de movimiento (imagen a video) a partir de la ilustración a color.
-
-Estilo base a color:
-> Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-
-Estilo base para colorear:
-> Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-
-Animación:
-> Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
+> Convert the reference illustration into a coloring book page for young children, keeping the same composition, characters and poses. STRICTLY black and white line art: crisp clean black outlines of uniform thickness on a pure white background, no color, no gray, no shading, no gradients, no fills, large simple shapes easy to color, no text.
 
 ## 01 · Tobi, el osito que compartía
 
-**Enseñanza:** Compartir hace que la alegría sea más grande.
-
-**Portada (color):** Tobi the bear cub (light brown, cream tummy) smiling, full body, centered, plain soft background. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-
-### Escena 1
-
-_Tobi era un osito que vivía en el bosque. Lo que más le gustaba en el mundo era la miel._
-
-- **color:** Tobi the bear cub (light brown, cream tummy) smiling happily, in a sunny cartoon forest with round trees and pines. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Tobi the bear cub (light brown, cream tummy) smiling happily, in a sunny cartoon forest with round trees and pines. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 2
-
-_Una mañana encontró un tarro de miel enorme y dorado. "¡Qué rico!", dijo con los ojos muy abiertos._
-
-- **color:** Tobi the bear cub (light brown, cream tummy) surprised with wide eyes, with a big jar of golden honey, in a sunny cartoon forest with round trees and pines. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Tobi the bear cub (light brown, cream tummy) surprised with wide eyes, with a big jar of golden honey, in a sunny cartoon forest with round trees and pines. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 3
-
-_Entonces llegaron sus amigos: Lila la coneja y Pipo el pajarito. Tenían mucha hambre._
-
-- **color:** Tobi the bear cub (light brown, cream tummy) smiling happily, Nico the white bunny (pink inner ears) sad with a small tear, Pipo the little blue bird sad with a small tear, with a big jar of golden honey, in a sunny cartoon forest with round trees and pines. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Tobi the bear cub (light brown, cream tummy) smiling happily, Nico the white bunny (pink inner ears) sad with a small tear, Pipo the little blue bird sad with a small tear, with a big jar of golden honey, in a sunny cartoon forest with round trees and pines. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 4
-
-_Tobi pensó: "Si comparto, me quedará menos miel para mí…". Y se quedó muy callado._
-
-- **color:** Tobi the bear cub (light brown, cream tummy) sad with a small tear, with a big jar of golden honey, in a sunny cartoon forest with round trees and pines. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Tobi the bear cub (light brown, cream tummy) sad with a small tear, with a big jar of golden honey, in a sunny cartoon forest with round trees and pines. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 5
-
-_Pero vio las caritas tristes de sus amigos y sonrió. "¡Vengan! ¡Hay miel para todos!"_
-
-- **color:** Tobi the bear cub (light brown, cream tummy) laughing with a big open smile, Nico the white bunny (pink inner ears) smiling happily, Pipo the little blue bird smiling happily, with a big jar of golden honey, in a sunny cartoon forest with round trees and pines. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Tobi the bear cub (light brown, cream tummy) laughing with a big open smile, Nico the white bunny (pink inner ears) smiling happily, Pipo the little blue bird smiling happily, with a big jar of golden honey, in a sunny cartoon forest with round trees and pines. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 6
-
-_Comieron juntos y rieron toda la tarde. Tobi descubrió que la miel sabe mucho mejor con amigos._
-
-- **color:** Tobi the bear cub (light brown, cream tummy) smiling happily, Nico the white bunny (pink inner ears) smiling happily, Pipo the little blue bird smiling happily, with a big jar of golden honey, in a warm orange sunset over a meadow. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Tobi the bear cub (light brown, cream tummy) smiling happily, Nico the white bunny (pink inner ears) smiling happily, Pipo the little blue bird smiling happily, with a big jar of golden honey, in a warm orange sunset over a meadow. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
+1. Tobi the chubby light brown bear cub with a cream tummy smiling in front of a small wooden cottage in a sunny cartoon forest with round green trees and pines. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+2. Tobi the chubby light brown bear cub with a cream tummy dreaming happily with hearts in his eyes, thinking about honey, in a sunny cartoon forest with round green trees and pines. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+3. Tobi the chubby light brown bear cub with a cream tummy walking with a small basket in a sunny cartoon forest with round green trees and pines, bees and flowers around. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+4. Tobi the chubby light brown bear cub with a cream tummy peeking behind an old big tree and finding a giant jar of golden honey in a sunny cartoon forest with round green trees and pines. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+5. Tobi the chubby light brown bear cub with a cream tummy jumping with joy next to a giant jar of golden honey in a sunny cartoon forest with round green trees and pines. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+6. Tobi the chubby light brown bear cub with a cream tummy carrying a giant honey jar on his back, walking toward his cottage in a sunny cartoon forest with round green trees and pines. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+7. Tobi the chubby light brown bear cub with a cream tummy holding a honey jar, Lila the white bunny with long ears and pink inner ears arriving looking sad and hungry in a sunny cartoon forest with round green trees and pines. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+8. Tobi the chubby light brown bear cub with a cream tummy, Lila the white bunny with long ears and pink inner ears and Pipo the tiny round blue bird with drooping wings, all together, in a sunny cartoon forest with round green trees and pines. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+9. Tobi the chubby light brown bear cub with a cream tummy hugging a giant honey jar tightly with a worried face in a sunny cartoon forest with round green trees and pines. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+10. Tobi the chubby light brown bear cub with a cream tummy sitting alone eating honey with a spoon, looking unhappy, in a sunny cartoon forest with round green trees and pines. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+11. Tobi the chubby light brown bear cub with a cream tummy looking out a window of his cottage at Lila the white bunny with long ears and pink inner ears and Pipo the tiny round blue bird sitting sadly outside in a sunny cartoon forest with round green trees and pines. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+12. Tobi the chubby light brown bear cub with a cream tummy thinking with a sad face, holding a spoon, inside his cottage inside a cozy little cottage room with a round window and a soft bed. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+13. Tobi the chubby light brown bear cub with a cream tummy opening his cottage door wide with a big happy smile, Lila the white bunny with long ears and pink inner ears and Pipo the tiny round blue bird surprised outside in a sunny cartoon forest with round green trees and pines. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+14. Lila the white bunny with long ears and pink inner ears jumping high and Pipo the tiny round blue bird flying happily, Tobi the chubby light brown bear cub with a cream tummy laughing, in a sunny cartoon forest with round green trees and pines. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+15. Tobi the chubby light brown bear cub with a cream tummy, Lila the white bunny with long ears and pink inner ears and Pipo the tiny round blue bird sitting on the grass sharing a big honey jar, in a green meadow with rolling hills, little flowers and a smiling sun. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+16. Tobi the chubby light brown bear cub with a cream tummy, Lila the white bunny with long ears and pink inner ears and Pipo the tiny round blue bird playing and chasing a small pink and yellow butterfly, in a green meadow with rolling hills, little flowers and a smiling sun. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+17. Tobi the chubby light brown bear cub with a cream tummy tasting honey with a spoon and a delighted face, friends beside him, in a meadow under a warm orange and pink sunset sky. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+18. Tobi the chubby light brown bear cub with a cream tummy, Lila the white bunny with long ears and pink inner ears and Pipo the tiny round blue bird hugging together happily in a meadow under a warm orange and pink sunset sky. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
 
 ## 02 · Tina, la tortuga paciente
 
-**Enseñanza:** Las cosas buenas necesitan tiempo y cariño.
-
-**Portada (color):** Tina the green turtle smiling, full body, centered, plain soft background. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-
-### Escena 1
-
-_Tina era una tortuga tranquila. Un día encontró una semilla pequeñita en el jardín._
-
-- **color:** Tina the green turtle surprised with wide eyes, with a tiny seed, in a garden with a wooden fence and grass. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Tina the green turtle surprised with wide eyes, with a tiny seed, in a garden with a wooden fence and grass. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 2
-
-_La plantó con cuidado en la tierra y le puso un poquito de agua._
-
-- **color:** Tina the green turtle smiling happily, with a blue watering can, in a garden with a wooden fence and grass. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Tina the green turtle smiling happily, with a blue watering can, in a garden with a wooden fence and grass. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 3
-
-_Su amigo Nico el conejo pasó corriendo. "¡Ahí no hay nada, Tina! ¡Vamos a jugar!"_
-
-- **color:** Tina the green turtle smiling happily, Nico the white bunny (pink inner ears) surprised with wide eyes, in a garden with a wooden fence and grass. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Tina the green turtle smiling happily, Nico the white bunny (pink inner ears) surprised with wide eyes, in a garden with a wooden fence and grass. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 4
-
-_Pero Tina volvía cada día. Regaba su semilla y le cantaba una cancioncita._
-
-- **color:** Tina the green turtle with eyes closed, calm, with a small green sprout and a blue watering can, in a garden with a wooden fence and grass. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Tina the green turtle with eyes closed, calm, with a small green sprout and a blue watering can, in a garden with a wooden fence and grass. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 5
-
-_Pasaron muchos días. Y una mañana… ¡un girasol gigante y amarillo miraba al sol!_
-
-- **color:** Tina the green turtle laughing with a big open smile, with a giant sunflower, in a garden full of colorful flowers with a wooden fence. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Tina the green turtle laughing with a big open smile, with a giant sunflower, in a garden full of colorful flowers with a wooden fence. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 6
-
-_Nico se quedó con la boca abierta. Tina sonrió: "Las cosas bonitas necesitan tiempo y cariño"._
-
-- **color:** Tina the green turtle smiling happily, Nico the white bunny (pink inner ears) surprised with wide eyes, with a giant sunflower, in a garden full of colorful flowers with a wooden fence. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Tina the green turtle smiling happily, Nico the white bunny (pink inner ears) surprised with wide eyes, with a giant sunflower, in a garden full of colorful flowers with a wooden fence. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
+1. Tina the small green turtle with a darker green shell walking slowly and smiling in a garden with a wooden fence, grass and a watering can. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+2. Tina the small green turtle with a darker green shell in a quiet garden with soft brown soil in a garden with a wooden fence, grass and a watering can. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+3. Tina the small green turtle with a darker green shell looking surprised at a tiny brown seed on the soil in a garden with a wooden fence, grass and a watering can. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+4. Tina the small green turtle with a darker green shell looking closely at a tiny seed with curious eyes in a garden with a wooden fence, grass and a watering can. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+5. Tina the small green turtle with a darker green shell digging a small hole in the soil with her paw and placing a seed in a garden with a wooden fence, grass and a watering can. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+6. Tina the small green turtle with a darker green shell watering a small mound of soil with a blue watering can in a garden with a wooden fence, grass and a watering can. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+7. Tina the small green turtle with a darker green shell next to a mound of soil, Nico the white bunny with long ears and pink inner ears running past and laughing in a garden with a wooden fence, grass and a watering can. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+8. Tina the small green turtle with a darker green shell smiling calmly and watering the soil while Nico the white bunny with long ears and pink inner ears looks puzzled in a garden with a wooden fence, grass and a watering can. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+9. Tina the small green turtle with a darker green shell sitting patiently next to bare soil, a calendar-like sun and moon in the sky, in a garden with a wooden fence, grass and a watering can. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+10. Tina the small green turtle with a darker green shell singing with musical notes to a mound of soil, holding a watering can in a garden with a wooden fence, grass and a watering can. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+11. Nico the white bunny with long ears and pink inner ears shrugging and laughing next to Tina the small green turtle with a darker green shell who keeps watering in a garden with a wooden fence, grass and a watering can. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+12. Tina the small green turtle with a darker green shell amazed looking at a tiny green sprout coming out of the soil in a garden with a wooden fence, grass and a watering can. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+13. Tina the small green turtle with a darker green shell cheering happily next to a small green sprout in a garden with a wooden fence, grass and a watering can. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+14. Tina the small green turtle with a darker green shell looking up at a tall green plant with big leaves in a garden with a wooden fence, grass and a watering can. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+15. Tina the small green turtle with a darker green shell watching a big yellow sunflower bud opening toward the sun in a garden bursting with colorful flowers and a wooden fence. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+16. Tina the small green turtle with a darker green shell tiny next to a giant tall sunflower, taller than the wooden fence in a garden bursting with colorful flowers and a wooden fence. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+17. Nico the white bunny with long ears and pink inner ears with mouth wide open in amazement looking at a giant sunflower, Tina the small green turtle with a darker green shell smiling in a garden bursting with colorful flowers and a wooden fence. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+18. Tina the small green turtle with a darker green shell and Nico the white bunny with long ears and pink inner ears sitting together under a giant sunflower in a meadow under a warm orange and pink sunset sky. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
 
 ## 03 · Nico, el conejo valiente
 
-**Enseñanza:** Ser valiente es tener miedo y, aun así, ayudar.
-
-**Portada (color):** Nico the white bunny (pink inner ears) smiling, full body, centered, plain soft background. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-
-### Escena 1
-
-_Nico era un conejo muy alegre de día. Pero cuando llegaba la noche, sentía mucho miedo._
-
-- **color:** Nico the white bunny (pink inner ears) sad with a small tear, in a starry night in the forest with a big soft moon. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Nico the white bunny (pink inner ears) sad with a small tear, in a starry night in the forest with a big soft moon. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 2
-
-_Una noche escuchó un ruido: "¡Pío, pío!". Alguien estaba llorando en la oscuridad._
-
-- **color:** Nico the white bunny (pink inner ears) surprised with wide eyes, Pipo the little blue bird sad with a small tear, in a starry night in the forest with a big soft moon. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Nico the white bunny (pink inner ears) surprised with wide eyes, Pipo the little blue bird sad with a small tear, in a starry night in the forest with a big soft moon. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 3
-
-_La abuela Búho le dijo: "Respira despacito, mira las estrellas y escucha con el corazón"._
-
-- **color:** Nico the white bunny (pink inner ears) sad with a small tear, Grandma Owl (brown, big round eyes) smiling happily, in a starry night in the forest with a big soft moon. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Nico the white bunny (pink inner ears) sad with a small tear, Grandma Owl (brown, big round eyes) smiling happily, in a starry night in the forest with a big soft moon. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 4
-
-_Nico respiró hondo. Sus patitas temblaban, pero dio un paso… y luego otro._
-
-- **color:** Nico the white bunny (pink inner ears) surprised with wide eyes, in a starry night in the forest with a big soft moon. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Nico the white bunny (pink inner ears) surprised with wide eyes, in a starry night in the forest with a big soft moon. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 5
-
-_Encontró a un pajarito perdido. "No tengas miedo, yo te llevo a casa", le dijo Nico._
-
-- **color:** Nico the white bunny (pink inner ears) smiling happily, Pipo the little blue bird smiling happily, in a starry night in the forest with a big soft moon. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Nico the white bunny (pink inner ears) smiling happily, Pipo the little blue bird smiling happily, in a starry night in the forest with a big soft moon. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 6
-
-_Esa noche Nico entendió algo: ser valiente no es no tener miedo, sino ayudar aunque lo sientas._
-
-- **color:** Nico the white bunny (pink inner ears) laughing with a big open smile, Pipo the little blue bird smiling happily, Grandma Owl (brown, big round eyes) smiling happily, in a starry night in the forest with a big soft moon. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Nico the white bunny (pink inner ears) laughing with a big open smile, Pipo the little blue bird smiling happily, Grandma Owl (brown, big round eyes) smiling happily, in a starry night in the forest with a big soft moon. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
+1. Nico the white bunny with long ears and pink inner ears jumping happily in a green meadow with rolling hills, little flowers and a smiling sun. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+2. Nico the white bunny with long ears and pink inner ears hiding under a blanket in his burrow while the sun sets outside the window inside a cozy little cottage room with a round window and a soft bed. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+3. Nico the white bunny with long ears and pink inner ears scared with trembling ears looking out at the dark forest in a forest at night with a starry sky and a big soft full moon. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+4. Nico the white bunny with long ears and pink inner ears at his burrow door listening, surprised, in a forest at night with a starry sky and a big soft full moon. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+5. Nico the white bunny with long ears and pink inner ears frozen with fear at the edge of the dark forest in a forest at night with a starry sky and a big soft full moon. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+6. Nico the white bunny with long ears and pink inner ears looking up at Grandma Owl, a plump brown owl with big round eyes sitting on a tree branch in a forest at night with a starry sky and a big soft full moon. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+7. Nico the white bunny with long ears and pink inner ears sad and small talking to Grandma Owl, a plump brown owl with big round eyes on a branch in a forest at night with a starry sky and a big soft full moon. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+8. Grandma Owl, a plump brown owl with big round eyes gently talking to Nico the white bunny with long ears and pink inner ears, both looking up at bright stars in a forest at night with a starry sky and a big soft full moon. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+9. Nico the white bunny with long ears and pink inner ears taking a deep breath with closed eyes under a sky full of stars in a forest at night with a starry sky and a big soft full moon. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+10. Nico the white bunny with long ears and pink inner ears walking carefully into the forest lit by moonlight in a forest at night with a starry sky and a big soft full moon. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+11. Nico the white bunny with long ears and pink inner ears finding Pipo the tiny round blue bird crying under a bush in a forest at night with a starry sky and a big soft full moon. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+12. Nico the white bunny with long ears and pink inner ears gently comforting Pipo the tiny round blue bird in a forest at night with a starry sky and a big soft full moon. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+13. Pipo the tiny round blue bird sitting on top of Nico the white bunny with long ears and pink inner ears's head as they walk through the forest in a forest at night with a starry sky and a big soft full moon. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+14. Nico the white bunny with long ears and pink inner ears with Pipo the tiny round blue bird on his head hopping across stones beside a small sparkling river in the forest at night. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+15. Nico the white bunny with long ears and pink inner ears delivering Pipo the tiny round blue bird to a nest where a mother blue bird waits with open wings in a forest at night with a starry sky and a big soft full moon. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+16. Nico the white bunny with long ears and pink inner ears proud and happy with blue birds singing around him in a forest at night with a starry sky and a big soft full moon. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+17. Grandma Owl, a plump brown owl with big round eyes winking at Nico the white bunny with long ears and pink inner ears who smiles proudly in a forest at night with a starry sky and a big soft full moon. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+18. Nico the white bunny with long ears and pink inner ears standing brave and happy under the moon with Pipo the tiny round blue bird and Grandma Owl, a plump brown owl with big round eyes in a forest at night with a starry sky and a big soft full moon. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
 
 ## 04 · La estrellita que perdió su brillo
 
-**Enseñanza:** La amabilidad hace brillar a los demás.
-
-**Portada (color):** Luz the little yellow star smiling, full body, centered, plain soft background. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-
-### Escena 1
-
-_En el cielo vivía Luz, una estrellita muy brillante que iluminaba el bosque cada noche._
-
-- **color:** Luz the little yellow star smiling happily, in a starry night in the forest with a big soft moon. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Luz the little yellow star smiling happily, in a starry night in the forest with a big soft moon. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 2
-
-_Pero una noche se sintió sola y triste. Su brillo se apagó y cayó suavemente al bosque._
-
-- **color:** Luz the little yellow star sad with a small tear, in a starry night in the forest with a big soft moon. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Luz the little yellow star sad with a small tear, in a starry night in the forest with a big soft moon. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 3
-
-_Pincho el erizo la encontró. "¿Estás bien?", preguntó. "No brillo", dijo Luz llorando._
-
-- **color:** Luz the little yellow star sad with a small tear, Pincho the hedgehog surprised with wide eyes, in a starry night in the forest with a big soft moon. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Luz the little yellow star sad with a small tear, Pincho the hedgehog surprised with wide eyes, in a starry night in the forest with a big soft moon. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 4
-
-_Pincho llamó a la abuela Búho. Se sentaron junto a Luz y le contaron cuentos bonitos._
-
-- **color:** Luz the little yellow star sad with a small tear, Pincho the hedgehog smiling happily, Grandma Owl (brown, big round eyes) smiling happily, in a starry night in the forest with a big soft moon. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Luz the little yellow star sad with a small tear, Pincho the hedgehog smiling happily, Grandma Owl (brown, big round eyes) smiling happily, in a starry night in the forest with a big soft moon. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 5
-
-_"Eres muy especial", le dijeron. Y poco a poco, Luz empezó a brillar otra vez._
-
-- **color:** Luz the little yellow star smiling happily, Pincho the hedgehog laughing with a big open smile, Grandma Owl (brown, big round eyes) smiling happily, with a floating red heart, in a starry night in the forest with a big soft moon. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Luz the little yellow star smiling happily, Pincho the hedgehog laughing with a big open smile, Grandma Owl (brown, big round eyes) smiling happily, with a floating red heart, in a starry night in the forest with a big soft moon. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 6
-
-_Luz volvió al cielo más brillante que nunca. Desde entonces, cada noche guiña un ojo a sus amigos._
-
-- **color:** Luz the little yellow star laughing with a big open smile, Pincho the hedgehog smiling happily, Grandma Owl (brown, big round eyes) smiling happily, in a starry night in the forest with a big soft moon. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Luz the little yellow star laughing with a big open smile, Pincho the hedgehog smiling happily, Grandma Owl (brown, big round eyes) smiling happily, in a starry night in the forest with a big soft moon. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
+1. Luz the little glowing yellow star with a cute face shining brightly in the night sky above the forest in a forest at night with a starry sky and a big soft full moon. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+2. Luz the little glowing yellow star with a cute face in the sky lighting a path in the forest where small animals walk in a forest at night with a starry sky and a big soft full moon. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+3. Luz the little glowing yellow star with a cute face looking sad and alone in a wide dark sky with tiny distant stars in a forest at night with a starry sky and a big soft full moon. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+4. Luz the little glowing yellow star with a cute face dim and sad, her glow fading in a forest at night with a starry sky and a big soft full moon. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+5. Luz the little glowing yellow star with a cute face falling gently from the sky into the forest, leaving a soft trail in a forest at night with a starry sky and a big soft full moon. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+6. Pincho the small round hedgehog with brown spikes and a cream face coming out of at the dark entrance of a little cave in the forest and spotting Luz the little glowing yellow star with a cute face lying on the grass. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+7. Pincho the small round hedgehog with brown spikes and a cream face looking worried at Luz the little glowing yellow star with a cute face who has a tear on her cheek in a forest at night with a starry sky and a big soft full moon. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+8. Pincho the small round hedgehog with brown spikes and a cream face running through the forest to find Grandma Owl, a plump brown owl with big round eyes on her branch in a forest at night with a starry sky and a big soft full moon. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+9. Grandma Owl, a plump brown owl with big round eyes flying down next to Luz the little glowing yellow star with a cute face and Pincho the small round hedgehog with brown spikes and a cream face in a forest at night with a starry sky and a big soft full moon. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+10. Grandma Owl, a plump brown owl with big round eyes, Pincho the small round hedgehog with brown spikes and a cream face and Luz the little glowing yellow star with a cute face sitting together in a circle on the grass in a forest at night with a starry sky and a big soft full moon. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+11. Pincho the small round hedgehog with brown spikes and a cream face telling a funny story with his paws up, Luz the little glowing yellow star with a cute face smiling slightly in a forest at night with a starry sky and a big soft full moon. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+12. Grandma Owl, a plump brown owl with big round eyes singing with musical notes, Luz the little glowing yellow star with a cute face with a tiny spark of light in a forest at night with a starry sky and a big soft full moon. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+13. Nico the white bunny with long ears and pink inner ears and Tobi the chubby light brown bear cub with a cream tummy bringing flowers to Luz the little glowing yellow star with a cute face, Pincho the small round hedgehog with brown spikes and a cream face and Grandma Owl, a plump brown owl with big round eyes beside in a forest at night with a starry sky and a big soft full moon. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+14. Luz the little glowing yellow star with a cute face glowing brighter surrounded by Pincho the small round hedgehog with brown spikes and a cream face, Grandma Owl, a plump brown owl with big round eyes, Nico the white bunny with long ears and pink inner ears and Tobi the chubby light brown bear cub with a cream tummy in a forest at night with a starry sky and a big soft full moon. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+15. Luz the little glowing yellow star with a cute face shining extremely bright lighting the whole forest, friends shielding their eyes happily in a forest at night with a starry sky and a big soft full moon. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+16. Luz the little glowing yellow star with a cute face hugging Pincho the small round hedgehog with brown spikes and a cream face goodbye, other friends waving in a forest at night with a starry sky and a big soft full moon. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+17. Luz the little glowing yellow star with a cute face rising into the sky leaving a trail of golden sparkles, friends watching from below in a forest at night with a starry sky and a big soft full moon. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+18. Luz the little glowing yellow star with a cute face winking from the sky, Pincho the small round hedgehog with brown spikes and a cream face, Grandma Owl, a plump brown owl with big round eyes, Nico the white bunny with long ears and pink inner ears and Tobi the chubby light brown bear cub with a cream tummy blowing kisses from the ground in a forest at night with a starry sky and a big soft full moon. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
 
 ## 05 · Bubu, el pez que quería volar
 
-**Enseñanza:** Cada uno tiene algo especial que lo hace único.
-
-**Portada (color):** Bubu the orange fish smiling, full body, centered, plain soft background. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-
-### Escena 1
-
-_Bubu era un pececito naranja que vivía en el mar azul. Le encantaba mirar el cielo._
-
-- **color:** Bubu the orange fish smiling happily, in under the sea and above the waves, blue ocean with sandy bottom and seaweed. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Bubu the orange fish smiling happily, in under the sea and above the waves, blue ocean with sandy bottom and seaweed. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 2
-
-_Cada día veía pasar a Pipo el pájaro. "¡Yo quiero volar como él!", suspiraba Bubu._
-
-- **color:** Bubu the orange fish sad with a small tear, Pipo the little blue bird smiling happily, in under the sea and above the waves, blue ocean with sandy bottom and seaweed. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Bubu the orange fish sad with a small tear, Pipo the little blue bird smiling happily, in under the sea and above the waves, blue ocean with sandy bottom and seaweed. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 3
-
-_Bubu saltó y saltó, pero siempre caía al agua. ¡Plaf! Se sintió muy triste._
-
-- **color:** Bubu the orange fish surprised with wide eyes, in under the sea and above the waves, blue ocean with sandy bottom and seaweed. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Bubu the orange fish surprised with wide eyes, in under the sea and above the waves, blue ocean with sandy bottom and seaweed. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 4
-
-_Pipo bajó a la orilla. "Yo no puedo nadar ni ver los peces de colores. ¡Tú sí!", le dijo._
-
-- **color:** Bubu the orange fish surprised with wide eyes, Pipo the little blue bird smiling happily, in under the sea and above the waves, blue ocean with sandy bottom and seaweed. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Bubu the orange fish surprised with wide eyes, Pipo the little blue bird smiling happily, in under the sea and above the waves, blue ocean with sandy bottom and seaweed. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 5
-
-_Bubu miró a su alrededor: corales, burbujas, algas que bailaban. ¡Su mar era hermoso!_
-
-- **color:** Bubu the orange fish laughing with a big open smile, a pink and yellow butterfly smiling happily, in under the sea and above the waves, blue ocean with sandy bottom and seaweed. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Bubu the orange fish laughing with a big open smile, a pink and yellow butterfly smiling happily, in under the sea and above the waves, blue ocean with sandy bottom and seaweed. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 6
-
-_Desde ese día, Pipo vuela por arriba y Bubu nada por abajo. Cada uno es especial a su manera._
-
-- **color:** Bubu the orange fish smiling happily, Pipo the little blue bird smiling happily, in under the sea and above the waves, blue ocean with sandy bottom and seaweed. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Bubu the orange fish smiling happily, Pipo the little blue bird smiling happily, in under the sea and above the waves, blue ocean with sandy bottom and seaweed. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
+1. Bubu the round orange fish with big eyes swimming happily under the sea, blue water, sandy bottom, corals and seaweed. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+2. Bubu the round orange fish with big eyes playing with bubbles near a coral cave and little snails under the sea, blue water, sandy bottom, corals and seaweed. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+3. Bubu the round orange fish with big eyes poking his head out of the water looking up at the sky dreamily at the sea surface, waves and a blue sky with a few clouds above. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+4. Bubu the round orange fish with big eyes in the water watching Pipo the tiny round blue bird flying high among the clouds at the sea surface, waves and a blue sky with a few clouds above. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+5. Bubu the round orange fish with big eyes sighing with a dreamy sad face at the surface, Pipo the tiny round blue bird in the sky at the sea surface, waves and a blue sky with a few clouds above. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+6. Bubu the round orange fish with big eyes leaping out of the water with a big splash at the sea surface, waves and a blue sky with a few clouds above. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+7. Bubu the round orange fish with big eyes mid-air after a jump, splashes around, looking frustrated at the sea surface, waves and a blue sky with a few clouds above. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+8. Bubu the round orange fish with big eyes sad hiding inside a coral cave under the sea, blue water, sandy bottom, corals and seaweed. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+9. Pipo the tiny round blue bird standing on the sandy shore calling toward the water at the sea surface, waves and a blue sky with a few clouds above. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+10. Bubu the round orange fish with big eyes at the surface talking with Pipo the tiny round blue bird on the shore at the sea surface, waves and a blue sky with a few clouds above. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+11. Pipo the tiny round blue bird laughing kindly next to the water, Bubu the round orange fish with big eyes surprised at the sea surface, waves and a blue sky with a few clouds above. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+12. Pipo the tiny round blue bird peeking curiously into the water where colorful corals glow at the sea surface, waves and a blue sky with a few clouds above. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+13. Bubu the round orange fish with big eyes smiling excitedly inviting Pipo the tiny round blue bird to look into the water at the sea surface, waves and a blue sky with a few clouds above. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+14. Bubu the round orange fish with big eyes swimming fast doing loops among seaweed under the sea, blue water, sandy bottom, corals and seaweed. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+15. Pipo the tiny round blue bird clapping his wings on the shore while Bubu the round orange fish with big eyes shows off a jump at the sea surface, waves and a blue sky with a few clouds above. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+16. Bubu the round orange fish with big eyes looking around amazed at colorful corals, starfish and dancing bubbles under the sea, blue water, sandy bottom, corals and seaweed. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+17. Pipo the tiny round blue bird flying above the waves and Bubu the round orange fish with big eyes swimming just below racing together at the sea surface, waves and a blue sky with a few clouds above. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+18. Bubu the round orange fish with big eyes happy and proud with Pipo the tiny round blue bird beside him at the surface in a meadow under a warm orange and pink sunset sky. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
 
 ## 06 · Dumbi y la hormiga Ani
 
-**Enseñanza:** No importa el tamaño: todos podemos ayudar.
-
-**Portada (color):** Dumbi the blue-grey elephant smiling, full body, centered, plain soft background. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-
-### Escena 1
-
-_Dumbi era un elefante enorme. Ani era una hormiga chiquitita. Vivían en la misma pradera._
-
-- **color:** Dumbi the blue-grey elephant smiling happily, Ani the tiny brown ant smiling happily, in a green meadow with rolling hills, flowers and a smiling sun. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Dumbi the blue-grey elephant smiling happily, Ani the tiny brown ant smiling happily, in a green meadow with rolling hills, flowers and a smiling sun. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 2
-
-_"Eres muy pequeña, Ani. No puedes hacer nada importante", decía Dumbi riéndose._
-
-- **color:** Dumbi the blue-grey elephant laughing with a big open smile, Ani the tiny brown ant sad with a small tear, in a green meadow with rolling hills, flowers and a smiling sun. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Dumbi the blue-grey elephant laughing with a big open smile, Ani the tiny brown ant sad with a small tear, in a green meadow with rolling hills, flowers and a smiling sun. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 3
-
-_Un día, a Dumbi se le cayó su cacahuate favorito dentro de una grieta muy angosta._
-
-- **color:** Dumbi the blue-grey elephant surprised with wide eyes, with a big rock and a narrow crack in the ground and a peanut, in a green meadow with rolling hills, flowers and a smiling sun. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Dumbi the blue-grey elephant surprised with wide eyes, with a big rock and a narrow crack in the ground and a peanut, in a green meadow with rolling hills, flowers and a smiling sun. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 4
-
-_Su trompa era demasiado grande. Intentó y intentó, pero no lo alcanzaba. ¡Qué tristeza!_
-
-- **color:** Dumbi the blue-grey elephant sad with a small tear, with a big rock and a narrow crack in the ground, in a green meadow with rolling hills, flowers and a smiling sun. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Dumbi the blue-grey elephant sad with a small tear, with a big rock and a narrow crack in the ground, in a green meadow with rolling hills, flowers and a smiling sun. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 5
-
-_Ani se acercó: "Yo puedo entrar". Se metió en la grieta y salió cargando el cacahuate._
-
-- **color:** Dumbi the blue-grey elephant surprised with wide eyes, Ani the tiny brown ant laughing with a big open smile, with a big rock and a peanut, in a green meadow with rolling hills, flowers and a smiling sun. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Dumbi the blue-grey elephant surprised with wide eyes, Ani the tiny brown ant laughing with a big open smile, with a big rock and a peanut, in a green meadow with rolling hills, flowers and a smiling sun. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 6
-
-_"¡Gracias, Ani! Perdón por reírme de ti", dijo Dumbi. Desde entonces son los mejores amigos._
-
-- **color:** Dumbi the blue-grey elephant smiling happily, Ani the tiny brown ant smiling happily, with a floating red heart, in a warm orange sunset over a meadow. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Dumbi the blue-grey elephant smiling happily, Ani the tiny brown ant smiling happily, with a floating red heart, in a warm orange sunset over a meadow. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
+1. Dumbi the big blue-grey baby elephant with pink inner ears walking heavily, flowers trembling in a green meadow with rolling hills, little flowers and a smiling sun. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+2. Ani the tiny brown ant with a happy face standing on the tip of a green leaf, very tiny, in a green meadow with rolling hills, little flowers and a smiling sun. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+3. Dumbi the big blue-grey baby elephant with pink inner ears looking around distractedly while Ani the tiny brown ant with a happy face waves from the grass below in a green meadow with rolling hills, little flowers and a smiling sun. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+4. Dumbi the big blue-grey baby elephant with pink inner ears laughing and pointing his trunk at Ani the tiny brown ant with a happy face who looks sad in a green meadow with rolling hills, little flowers and a smiling sun. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+5. Ani the tiny brown ant with a happy face walking away sadly toward a small anthill in a green meadow with rolling hills, little flowers and a smiling sun. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+6. Dumbi the big blue-grey baby elephant with pink inner ears proudly holding a shiny golden peanut with his trunk in a green meadow with rolling hills, little flowers and a smiling sun. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+7. Dumbi the big blue-grey baby elephant with pink inner ears surprised as a golden peanut slips from his trunk near big grey rocks in a green meadow with rolling hills, little flowers and a smiling sun. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+8. a golden peanut falling into a narrow deep crack between rocks, Dumbi the big blue-grey baby elephant with pink inner ears watching in shock in a green meadow with rolling hills, little flowers and a smiling sun. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+9. Dumbi the big blue-grey baby elephant with pink inner ears trying to push his trunk into a narrow crack in the rocks, straining in a green meadow with rolling hills, little flowers and a smiling sun. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+10. Dumbi the big blue-grey baby elephant with pink inner ears pushing a huge rock with all his strength, face red with effort in a green meadow with rolling hills, little flowers and a smiling sun. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+11. Dumbi the big blue-grey baby elephant with pink inner ears sitting sadly with a big tear next to the rocks in a green meadow with rolling hills, little flowers and a smiling sun. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+12. Ani the tiny brown ant with a happy face running fast through the grass toward the rocks in a green meadow with rolling hills, little flowers and a smiling sun. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+13. Ani the tiny brown ant with a happy face standing bravely in front of the crack, Dumbi the big blue-grey baby elephant with pink inner ears looking down doubtful in a green meadow with rolling hills, little flowers and a smiling sun. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+14. Ani the tiny brown ant with a happy face inside a dark narrow crack reaching a golden peanut in a green meadow with rolling hills, little flowers and a smiling sun. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+15. Ani the tiny brown ant with a happy face carrying a golden peanut on her back, climbing up the crack in a green meadow with rolling hills, little flowers and a smiling sun. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+16. Ani the tiny brown ant with a happy face emerging from the crack holding up the golden peanut, Dumbi the big blue-grey baby elephant with pink inner ears amazed and happy in a green meadow with rolling hills, little flowers and a smiling sun. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+17. Dumbi the big blue-grey baby elephant with pink inner ears kneeling down gently to Ani the tiny brown ant with a happy face, both smiling warmly in a green meadow with rolling hills, little flowers and a smiling sun. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+18. Dumbi the big blue-grey baby elephant with pink inner ears and Ani the tiny brown ant with a happy face celebrating together with a golden peanut and a little party hat in a meadow under a warm orange and pink sunset sky. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
 
 ## 07 · Fito, el zorro y las palabras mágicas
 
-**Enseñanza:** Las palabras amables abren todas las puertas.
-
-**Portada (color):** Fito the orange fox smiling, full body, centered, plain soft background. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-
-### Escena 1
-
-_Fito era un zorro listo, pero muy mandón. "¡Dame eso!", "¡Quítate!", gritaba a todos._
-
-- **color:** Fito the orange fox laughing with a big open smile, Misu the grey kitten sad with a small tear, in a cozy village street with three pastel houses. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Fito the orange fox laughing with a big open smile, Misu the grey kitten sad with a small tear, in a cozy village street with three pastel houses. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 2
-
-_Un día quiso un pastel de la panadería. "¡Dame un pastel!", gritó. Nadie le hizo caso._
-
-- **color:** Fito the orange fox sad with a small tear, Tobi the bear cub (light brown, cream tummy) sad with a small tear, with a pink frosted cake with a candle, in a cozy village street with three pastel houses. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Fito the orange fox sad with a small tear, Tobi the bear cub (light brown, cream tummy) sad with a small tear, with a pink frosted cake with a candle, in a cozy village street with three pastel houses. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 3
-
-_La abuela Búho lo vio triste. "Fito, existen dos palabras mágicas: por favor y gracias"._
-
-- **color:** Fito the orange fox surprised with wide eyes, Grandma Owl (brown, big round eyes) smiling happily, in a cozy village street with three pastel houses. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Fito the orange fox surprised with wide eyes, Grandma Owl (brown, big round eyes) smiling happily, in a cozy village street with three pastel houses. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 4
-
-_Fito regresó a la panadería. "¿Me das un pastel, por favor?", dijo con voz suave._
-
-- **color:** Fito the orange fox smiling happily, Tobi the bear cub (light brown, cream tummy) surprised with wide eyes, with a pink frosted cake with a candle, in a cozy village street with three pastel houses. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Fito the orange fox smiling happily, Tobi the bear cub (light brown, cream tummy) surprised with wide eyes, with a pink frosted cake with a candle, in a cozy village street with three pastel houses. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 5
-
-_¡Y funcionó! El oso panadero sonrió y le dio el pastel más grande. "¡Gracias!", dijo Fito._
-
-- **color:** Fito the orange fox laughing with a big open smile, Tobi the bear cub (light brown, cream tummy) smiling happily, with a pink frosted cake with a candle, in a cozy village street with three pastel houses. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Fito the orange fox laughing with a big open smile, Tobi the bear cub (light brown, cream tummy) smiling happily, with a pink frosted cake with a candle, in a cozy village street with three pastel houses. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 6
-
-_Desde ese día, Fito usa sus palabras mágicas todos los días. Y tiene muchos más amigos._
-
-- **color:** Fito the orange fox smiling happily, Misu the grey kitten smiling happily, Tobi the bear cub (light brown, cream tummy) smiling happily, in a cozy village street with three pastel houses. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Fito the orange fox smiling happily, Misu the grey kitten smiling happily, Tobi the bear cub (light brown, cream tummy) smiling happily, in a cozy village street with three pastel houses. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
+1. Fito the orange fox with a white chest and fluffy tail standing proudly on a cozy village street with three pastel houses. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+2. Fito the orange fox with a white chest and fluffy tail climbing a fence and showing off on a cozy village street with three pastel houses. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+3. Fito the orange fox with a white chest and fluffy tail snatching a red ball from Misu the grey kitten with big eyes who looks sad on a cozy village street with three pastel houses. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+4. Fito the orange fox with a white chest and fluffy tail pushing past Tina the small green turtle with a darker green shell rudely on a cozy village street with three pastel houses. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+5. Fito the orange fox with a white chest and fluffy tail sitting alone on a bench in an empty village square on a cozy village street with three pastel houses. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+6. Fito the orange fox with a white chest and fluffy tail sniffing the air with delight in front of in front of a small cute bakery with a striped awning and cakes in the window. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+7. Fito the orange fox with a white chest and fluffy tail shouting at the counter while Tobi the chubby light brown bear cub with a cream tummy wearing a baker apron ignores him in front of a small cute bakery with a striped awning and cakes in the window. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+8. Fito the orange fox with a white chest and fluffy tail stomping angrily out of the bakery empty-handed in front of a small cute bakery with a striped awning and cakes in the window. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+9. Grandma Owl, a plump brown owl with big round eyes perched on a lamp post looking at Fito the orange fox with a white chest and fluffy tail sitting sadly on the curb on a cozy village street with three pastel houses. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+10. Fito the orange fox with a white chest and fluffy tail complaining with crossed arms to Grandma Owl, a plump brown owl with big round eyes on a cozy village street with three pastel houses. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+11. Grandma Owl, a plump brown owl with big round eyes whispering wisely to a curious Fito the orange fox with a white chest and fluffy tail on a cozy village street with three pastel houses. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+12. Fito the orange fox with a white chest and fluffy tail wrinkling his nose doubtfully while Grandma Owl, a plump brown owl with big round eyes nods on a cozy village street with three pastel houses. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+13. Fito the orange fox with a white chest and fluffy tail at the bakery counter asking politely with a shy smile, Tobi the chubby light brown bear cub with a cream tummy as the baker listening in front of a small cute bakery with a striped awning and cakes in the window. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+14. Tobi the chubby light brown bear cub with a cream tummy in a baker apron smiling widely handing a huge strawberry cake to Fito the orange fox with a white chest and fluffy tail in front of a small cute bakery with a striped awning and cakes in the window. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+15. Fito the orange fox with a white chest and fluffy tail holding a big strawberry cake with a warm happy face in front of a small cute bakery with a striped awning and cakes in the window. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+16. Fito the orange fox with a white chest and fluffy tail asking politely, Misu the grey kitten with big eyes smiling and passing him a red ball on a cozy village street with three pastel houses. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+17. Fito the orange fox with a white chest and fluffy tail apologizing to Tina the small green turtle with a darker green shell, Misu the grey kitten with big eyes beside, sharing a cake on a bench on a cozy village street with three pastel houses. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+18. Fito the orange fox with a white chest and fluffy tail, Misu the grey kitten with big eyes, Tina the small green turtle with a darker green shell and Tobi the chubby light brown bear cub with a cream tummy playing together happily in the village square in a meadow under a warm orange and pink sunset sky. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
 
 ## 08 · Nube, la nubecita gruñona
 
-**Enseñanza:** Está bien sentir tristeza, y todos tenemos un lugar importante.
-
-**Portada (color):** Nube the little cloud smiling, full body, centered, plain soft background. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-
-### Escena 1
-
-_Nube era una nubecita que vivía en el cielo. Ese día se sentía gruñona y muy gris._
-
-- **color:** Nube the little cloud sad with a small tear, in high in a blue sky among soft clouds. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Nube the little cloud sad with a small tear, in high in a blue sky among soft clouds. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 2
-
-_Abajo, Misu la gata y Tobi el oso hacían un picnic. "¡Qué día tan bonito!", decían._
-
-- **color:** Nube the little cloud sad with a small tear, Misu the grey kitten smiling happily, Tobi the bear cub (light brown, cream tummy) smiling happily, with a picnic basket, in a meadow picnic with a pink checkered blanket. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Nube the little cloud sad with a small tear, Misu the grey kitten smiling happily, Tobi the bear cub (light brown, cream tummy) smiling happily, with a picnic basket, in a meadow picnic with a pink checkered blanket. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 3
-
-_Nube no aguantó más y se puso a llorar. ¡Plic, plac! Empezó a llover sobre el picnic._
-
-- **color:** Nube the little cloud sad with a small tear, Misu the grey kitten surprised with wide eyes, Tobi the bear cub (light brown, cream tummy) surprised with wide eyes, with a red umbrella, in a rainy day in a garden with a wooden fence. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Nube the little cloud sad with a small tear, Misu the grey kitten surprised with wide eyes, Tobi the bear cub (light brown, cream tummy) surprised with wide eyes, with a red umbrella, in a rainy day in a garden with a wooden fence. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 4
-
-_"Perdón, arruiné su día", dijo Nube muy apenada. Se sentía la peor nube del mundo._
-
-- **color:** Nube the little cloud sad with a small tear, in a rainy day in a garden with a wooden fence. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Nube the little cloud sad with a small tear, in a rainy day in a garden with a wooden fence. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 5
-
-_Pero al día siguiente, Misu la llamó: "¡Mira! Gracias a tu lluvia, el jardín se llenó de flores"._
-
-- **color:** Nube the little cloud surprised with wide eyes, Misu the grey kitten laughing with a big open smile, a pink and yellow butterfly smiling happily, in a garden full of colorful flowers with a wooden fence. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Nube the little cloud surprised with wide eyes, Misu the grey kitten laughing with a big open smile, a pink and yellow butterfly smiling happily, in a garden full of colorful flowers with a wooden fence. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 6
-
-_Nube sonrió con arcoíris. Entendió que llorar está bien, y que su lluvia también hace cosas bonitas._
-
-- **color:** Nube the little cloud laughing with a big open smile, Misu the grey kitten smiling happily, Tobi the bear cub (light brown, cream tummy) smiling happily, in a garden full of colorful flowers with a wooden fence. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Nube the little cloud laughing with a big open smile, Misu the grey kitten smiling happily, Tobi the bear cub (light brown, cream tummy) smiling happily, in a garden full of colorful flowers with a wooden fence. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
+1. Nube the small fluffy white cloud with a cute face (a cloud only, no body, no legs) floating high in the blue sky among soft white clouds. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+2. Nube the small fluffy white cloud with a cute face (a cloud only, no body, no legs) smiling and floating with a gentle breeze high in the blue sky among soft white clouds. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+3. Nube the small fluffy white cloud with a cute face (a cloud only, no body, no legs) looking grey, heavy and grumpy with a frown high in the blue sky among soft white clouds. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+4. Misu the grey kitten with big eyes and Tobi the chubby light brown bear cub with a cream tummy setting up cupcakes on a picnic blanket, Nube the small fluffy white cloud with a cute face (a cloud only, no body, no legs) small and grey in the sky above in a meadow with a pink checkered picnic blanket and a basket. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+5. Nube the small fluffy white cloud with a cute face (a cloud only, no body, no legs) grey and sad looking down at Misu the grey kitten with big eyes and Tobi the chubby light brown bear cub with a cream tummy laughing on the picnic blanket in a meadow with a pink checkered picnic blanket and a basket. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+6. Nube the small fluffy white cloud with a cute face (a cloud only, no body, no legs) very dark grey with a trembling lip, holding back tears high in the blue sky among soft white clouds. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+7. Nube the small fluffy white cloud with a cute face (a cloud only, no body, no legs) crying raindrops that fall onto the meadow below in a garden on a rainy day, grey sky, raindrops falling. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+8. Misu the grey kitten with big eyes and Tobi the chubby light brown bear cub with a cream tummy running under a red umbrella, wet cupcakes on the blanket, Nube the small fluffy white cloud with a cute face (a cloud only, no body, no legs) raining above in a garden on a rainy day, grey sky, raindrops falling. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+9. Nube the small fluffy white cloud with a cute face (a cloud only, no body, no legs) crying harder with big raindrops in a garden on a rainy day, grey sky, raindrops falling. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+10. Nube the small fluffy white cloud with a cute face (a cloud only, no body, no legs) small, tired and light after raining, a few last drops falling in a garden on a rainy day, grey sky, raindrops falling. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+11. Nube the small fluffy white cloud with a cute face (a cloud only, no body, no legs) white again, calm, with a soft relieved expression high in the blue sky among soft white clouds at dusk. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+12. Nube the small fluffy white cloud with a cute face (a cloud only, no body, no legs) hiding shyly behind a mountain top in a meadow under a warm orange and pink sunset sky. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+13. Misu the grey kitten with big eyes on a hill calling up to Nube the small fluffy white cloud with a cute face (a cloud only, no body, no legs) who peeks from behind the mountain, morning light in a green meadow with rolling hills, little flowers and a smiling sun. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+14. Misu the grey kitten with big eyes showing a garden full of fresh colorful flowers, Nube the small fluffy white cloud with a cute face (a cloud only, no body, no legs) watching from above in a garden bursting with colorful flowers and a wooden fence. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+15. Misu the grey kitten with big eyes pointing at a small pink and yellow butterfly and flowers, Nube the small fluffy white cloud with a cute face (a cloud only, no body, no legs) surprised and touched in a garden bursting with colorful flowers and a wooden fence. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+16. Tobi the chubby light brown bear cub with a cream tummy holding a tray of cupcakes smiling up at Nube the small fluffy white cloud with a cute face (a cloud only, no body, no legs) in a garden bursting with colorful flowers and a wooden fence. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+17. Nube the small fluffy white cloud with a cute face (a cloud only, no body, no legs) smiling with a bright rainbow appearing behind her over the garden in a garden bursting with colorful flowers and a wooden fence. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+18. Nube the small fluffy white cloud with a cute face (a cloud only, no body, no legs) happy under a rainbow with Misu the grey kitten with big eyes, Tobi the chubby light brown bear cub with a cream tummy and a small pink and yellow butterfly below in a garden bursting with colorful flowers and a wooden fence. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
 
 ## 09 · Misu y el jardín
 
-**Enseñanza:** Cuidar la naturaleza nos regala belleza y vida.
-
-**Portada (color):** Misu the grey kitten smiling, full body, centered, plain soft background. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-
-### Escena 1
-
-_Misu era una gatita curiosa. Un día encontró un jardín triste, lleno de basura y sin flores._
-
-- **color:** Misu the grey kitten sad with a small tear, with scattered trash, in a garden with a wooden fence and grass. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Misu the grey kitten sad with a small tear, with scattered trash, in a garden with a wooden fence and grass. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 2
-
-_"¡Pobre jardín!", dijo. Y sin pensarlo dos veces, empezó a recoger toda la basura._
-
-- **color:** Misu the grey kitten surprised with wide eyes, with scattered trash, in a garden with a wooden fence and grass. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Misu the grey kitten surprised with wide eyes, with scattered trash, in a garden with a wooden fence and grass. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 3
-
-_Sus amigos Tina y Nico llegaron a ayudar. Juntos plantaron semillas en la tierra limpia._
-
-- **color:** Misu the grey kitten smiling happily, Tina the green turtle smiling happily, Nico the white bunny (pink inner ears) smiling happily, with a tiny seed, in a garden with a wooden fence and grass. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Misu the grey kitten smiling happily, Tina the green turtle smiling happily, Nico the white bunny (pink inner ears) smiling happily, with a tiny seed, in a garden with a wooden fence and grass. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 4
-
-_Cada tarde Misu regaba las plantitas y les hablaba bajito: "Crezcan fuertes, amigas"._
-
-- **color:** Misu the grey kitten smiling happily, with a blue watering can and a small green sprout, in a garden with a wooden fence and grass. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Misu the grey kitten smiling happily, with a blue watering can and a small green sprout, in a garden with a wooden fence and grass. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 5
-
-_Poco a poco el jardín se llenó de colores. ¡Y llegaron mariposas y pajaritos a visitarlo!_
-
-- **color:** Misu the grey kitten laughing with a big open smile, a pink and yellow butterfly smiling happily, Pipo the little blue bird smiling happily, in a garden full of colorful flowers with a wooden fence. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Misu the grey kitten laughing with a big open smile, a pink and yellow butterfly smiling happily, Pipo the little blue bird smiling happily, in a garden full of colorful flowers with a wooden fence. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 6
-
-_Misu aprendió que cuando cuidamos la naturaleza, la naturaleza nos regala belleza y vida._
-
-- **color:** Misu the grey kitten smiling happily, Tina the green turtle smiling happily, Nico the white bunny (pink inner ears) smiling happily, a pink and yellow butterfly smiling happily, in a garden full of colorful flowers with a wooden fence. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Misu the grey kitten smiling happily, Tina the green turtle smiling happily, Nico the white bunny (pink inner ears) smiling happily, a pink and yellow butterfly smiling happily, in a garden full of colorful flowers with a wooden fence. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
+1. Misu the grey kitten with big eyes exploring curiously on a cozy village street with three pastel houses. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+2. Misu the grey kitten with big eyes following a small pink and yellow butterfly toward an old gate in a garden with a wooden fence, grass and a watering can. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+3. Misu the grey kitten with big eyes looking sadly at a neglected garden full of litter, dry soil and no flowers in a garden with a wooden fence, grass and a watering can. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+4. Misu the grey kitten with big eyes among scattered papers, plastic bottles and an old can, a small pink and yellow butterfly flying away in a garden with a wooden fence, grass and a watering can. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+5. Misu the grey kitten with big eyes touching the dry soil gently with a sad face in a garden with a wooden fence, grass and a watering can. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+6. Misu the grey kitten with big eyes picking up litter and putting it in a bag in a garden with a wooden fence, grass and a watering can. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+7. Misu the grey kitten with big eyes tired next to two full garbage bags, wiping her forehead in a garden with a wooden fence, grass and a watering can. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+8. Tina the small green turtle with a darker green shell and Nico the white bunny with long ears and pink inner ears arriving while Misu the grey kitten with big eyes holds a garbage bag in a garden with a wooden fence, grass and a watering can. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+9. Misu the grey kitten with big eyes, Tina the small green turtle with a darker green shell and Nico the white bunny with long ears and pink inner ears standing proudly in a clean garden with bare soil in a garden with a wooden fence, grass and a watering can. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+10. Nico the white bunny with long ears and pink inner ears holding a small bag of seeds and Tina the small green turtle with a darker green shell carrying a blue watering can in a garden with a wooden fence, grass and a watering can. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+11. Misu the grey kitten with big eyes, Tina the small green turtle with a darker green shell and Nico the white bunny with long ears and pink inner ears planting seeds in neat rows in a garden with a wooden fence, grass and a watering can. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+12. Misu the grey kitten with big eyes alone watering small sprouts with a blue watering can at sunset in a garden with a wooden fence, grass and a watering can. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+13. Misu the grey kitten with big eyes whispering to little green sprouts that lean toward her in a garden with a wooden fence, grass and a watering can. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+14. Misu the grey kitten with big eyes amazed as the garden fills with blooming colorful flowers in a garden bursting with colorful flowers and a wooden fence. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+15. Misu the grey kitten with big eyes sitting in the middle of a garden full of red, yellow, pink and purple flowers in a garden bursting with colorful flowers and a wooden fence. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+16. Misu the grey kitten with big eyes surrounded by many butterflies and Pipo the tiny round blue bird singing on the fence in a garden bursting with colorful flowers and a wooden fence. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+17. Misu the grey kitten with big eyes, Tina the small green turtle with a darker green shell, Nico the white bunny with long ears and pink inner ears, Tobi the chubby light brown bear cub with a cream tummy and Fito the orange fox with a white chest and fluffy tail celebrating in the flower garden in a garden bursting with colorful flowers and a wooden fence. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+18. Misu the grey kitten with big eyes happy with a small pink and yellow butterfly on her nose in the blooming garden in a meadow under a warm orange and pink sunset sky. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
 
 ## 10 · Pincho, el erizo que quería un abrazo
 
-**Enseñanza:** Ser diferente no impide tener amigos; con cariño todo se puede.
-
-**Portada (color):** Pincho the hedgehog smiling, full body, centered, plain soft background. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-
-### Escena 1
-
-_Pincho era un erizo pequeño con muchas púas. Le encantaba jugar con sus amigos._
-
-- **color:** Pincho the hedgehog smiling happily, in a green meadow with rolling hills, flowers and a smiling sun. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Pincho the hedgehog smiling happily, in a green meadow with rolling hills, flowers and a smiling sun. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 2
-
-_Pero cuando quería abrazar a alguien… "¡Ay, pinchas!", decían todos, y se alejaban._
-
-- **color:** Pincho the hedgehog sad with a small tear, Nico the white bunny (pink inner ears) surprised with wide eyes, in a green meadow with rolling hills, flowers and a smiling sun. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Pincho the hedgehog sad with a small tear, Nico the white bunny (pink inner ears) surprised with wide eyes, in a green meadow with rolling hills, flowers and a smiling sun. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 3
-
-_Pincho se sentó solo bajo un árbol. "Nadie me abrazará nunca", pensó con una lágrima._
-
-- **color:** Pincho the hedgehog sad with a small tear, in a sunny cartoon forest with round trees and pines. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Pincho the hedgehog sad with a small tear, in a sunny cartoon forest with round trees and pines. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 4
-
-_Tobi el oso tuvo una idea. Trajo una manta muy suave y la puso sobre las púas de Pincho._
-
-- **color:** Pincho the hedgehog surprised with wide eyes, Tobi the bear cub (light brown, cream tummy) smiling happily, with a soft pink blanket, in a sunny cartoon forest with round trees and pines. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Pincho the hedgehog surprised with wide eyes, Tobi the bear cub (light brown, cream tummy) smiling happily, with a soft pink blanket, in a sunny cartoon forest with round trees and pines. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 5
-
-_"¡Ahora sí!", gritaron todos. Y le dieron el abrazo más grande y calientito del bosque._
-
-- **color:** Tobi the bear cub (light brown, cream tummy) laughing with a big open smile, Pincho the hedgehog laughing with a big open smile, Nico the white bunny (pink inner ears) smiling happily, with a floating red heart and a soft pink blanket, in a sunny cartoon forest with round trees and pines. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Tobi the bear cub (light brown, cream tummy) laughing with a big open smile, Pincho the hedgehog laughing with a big open smile, Nico the white bunny (pink inner ears) smiling happily, with a floating red heart and a soft pink blanket, in a sunny cartoon forest with round trees and pines. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
-
-### Escena 6
-
-_Pincho aprendió que ser diferente no es malo. Con amigos que te quieren, siempre hay una solución._
-
-- **color:** Tobi the bear cub (light brown, cream tummy) smiling happily, Pincho the hedgehog smiling happily, Nico the white bunny (pink inner ears) smiling happily, a pink and yellow butterfly smiling happily, in a warm orange sunset over a meadow. Children's picture-book illustration, cute kawaii cartoon animals, big expressive eyes, soft rounded shapes, bright cheerful flat colors, thick clean outlines, gentle lighting, no text, 4:3.
-- **colorear:** Tobi the bear cub (light brown, cream tummy) smiling happily, Pincho the hedgehog smiling happily, Nico the white bunny (pink inner ears) smiling happily, a pink and yellow butterfly smiling happily, in a warm orange sunset over a meadow. Children's coloring book page, strictly black and white, monochrome black line art only on a pure white background, thick smooth clean outlines, no color at all, no shading, no gray fills, no gradients, simple large shapes easy to color for kids age 3-7, no text, 4:3.
-- **animación:** Gentle looping animation, subtle idle motion: characters blink and breathe, leaves and grass sway, clouds drift slowly, soft camera push-in, 4 seconds, kid-friendly, no fast movement.
+1. Pincho the small round hedgehog with brown spikes and a cream face smiling in a green meadow with rolling hills, little flowers and a smiling sun. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+2. Pincho the small round hedgehog with brown spikes and a cream face rolling down a green hill happily in a green meadow with rolling hills, little flowers and a smiling sun. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+3. Pincho the small round hedgehog with brown spikes and a cream face looking wistfully at a heart-shaped cloud in the sky in a green meadow with rolling hills, little flowers and a smiling sun. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+4. Pincho the small round hedgehog with brown spikes and a cream face reaching out to hug, Nico the white bunny with long ears and pink inner ears jumping back startled in a green meadow with rolling hills, little flowers and a smiling sun. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+5. Pincho the small round hedgehog with brown spikes and a cream face with open arms, Misu the grey kitten with big eyes hiding behind a tree in a sunny cartoon forest with round green trees and pines. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+6. Grandma Owl, a plump brown owl with big round eyes on a branch politely keeping distance from Pincho the small round hedgehog with brown spikes and a cream face below in a sunny cartoon forest with round green trees and pines. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+7. Pincho the small round hedgehog with brown spikes and a cream face sitting alone under a big tree in a sunny cartoon forest with round green trees and pines. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+8. Pincho the small round hedgehog with brown spikes and a cream face crying softly under a tree with a tear on his nose in a sunny cartoon forest with round green trees and pines. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+9. Tobi the chubby light brown bear cub with a cream tummy watching Pincho the small round hedgehog with brown spikes and a cream face sadly from a distance in a sunny cartoon forest with round green trees and pines. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+10. Tobi the chubby light brown bear cub with a cream tummy sitting next to Pincho the small round hedgehog with brown spikes and a cream face under the tree, listening in a sunny cartoon forest with round green trees and pines. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+11. Pincho the small round hedgehog with brown spikes and a cream face explaining sadly, pointing at his spikes, Tobi the chubby light brown bear cub with a cream tummy thinking in a sunny cartoon forest with round green trees and pines. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+12. Tobi the chubby light brown bear cub with a cream tummy with a lightbulb idea expression next to Pincho the small round hedgehog with brown spikes and a cream face in a sunny cartoon forest with round green trees and pines. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+13. Tobi the chubby light brown bear cub with a cream tummy running back carrying a soft pink blanket in a sunny cartoon forest with round green trees and pines. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+14. Tobi the chubby light brown bear cub with a cream tummy placing a pink blanket over Pincho the small round hedgehog with brown spikes and a cream face's spikes like a cape in a sunny cartoon forest with round green trees and pines. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+15. Tobi the chubby light brown bear cub with a cream tummy hugging Pincho the small round hedgehog with brown spikes and a cream face wrapped in a pink blanket, both very happy in a sunny cartoon forest with round green trees and pines. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+16. Pincho the small round hedgehog with brown spikes and a cream face with eyes closed and a blissful smile inside Tobi the chubby light brown bear cub with a cream tummy's hug in a sunny cartoon forest with round green trees and pines. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+17. Tobi the chubby light brown bear cub with a cream tummy, Nico the white bunny with long ears and pink inner ears and Misu the grey kitten with big eyes all hugging Pincho the small round hedgehog with brown spikes and a cream face wrapped in a pink blanket in a sunny cartoon forest with round green trees and pines. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
+18. Pincho the small round hedgehog with brown spikes and a cream face with the pink blanket cape walking happily with Tobi the chubby light brown bear cub with a cream tummy, Nico the white bunny with long ears and pink inner ears and Misu the grey kitten with big eyes in a meadow under a warm orange and pink sunset sky. Children's picture-book illustration, kawaii cartoon style, soft rounded shapes, bright cheerful flat colors, thick clean outlines, no text.
 
