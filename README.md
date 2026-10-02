@@ -21,9 +21,26 @@ Puzle de bloques: arrastra cubos de madera a una bandeja de 8×8 y vacía filas 
 
 Abrir: `bloquazo/index.html` (o la URL de arriba). Truco para probar: `index.html#todos` desbloquea los 200 niveles.
 
+## Brick Breaker
+
+Recreación del clásico que venía preinstalado en los BlackBerry: paleta, bola y ladrillos, con estética retro de pantalla negra.
+
+- **34 niveles** diseñados a mano, con ladrillos de 1, 2 y 3 golpes y **plateados irrompibles** (solo los rompen las balas).
+- **10 cápsulas** del original: LIFE, LONG, SLOW, CATCH, GUN, LASER, BOMB, MULTI, FLIP y WRAP. Duran hasta perder una vida o pasar de nivel.
+- **Puntaje oficial**: 10 por ladrillo con la bola, 20 con láser, 50 con bala, 5 por daño de bomba y 50 por cápsula.
+- **El "Turn"**: al pasar el nivel 34 vuelves al 1 con la bola más rápida; si pasas los 34 dos veces, la bola queda lenta para siempre.
+- La bola acelera un poquito con cada rebote en la paleta (tope +24 %); se reinicia al perder una vida o cambiar de nivel.
+- 3 vidas, récord y partida en curso guardados en el navegador (botón **Continuar**).
+- Control táctil relativo: la paleta se desliza con el dedo, no salta a donde tocas. Con ratón sigue al puntero; también flechas. Toque, clic o espacio para lanzar y disparar; `P` pausa.
+- Efectos de sonido generados con Web Audio.
+
+Abrir: `brickbreaker/index.html`.
+
+Trucos para probar (se pueden combinar con comas, por ejemplo `index.html#todos,test`): `#todos` desbloquea los 34 niveles, `#test` hace que cada ladrillo suelte una cápsula y `#turn` empieza como si ya hubieras pasado el Turn.
+
 ## Publicación
 
-`.github/workflows/pages.yml` publica el repo en GitHub Pages en cada push a `main` y versiona la caché del service worker con el hash del commit, así cada versión nueva se descarga sola (el juego avisa con un toque para actualizar).
+`.github/workflows/pages.yml` publica el repo en GitHub Pages en cada push a `main` (juegos en `.../bloquazo/` y `.../brickbreaker/`) y versiona la caché del service worker con el hash del commit, así cada versión nueva se descarga sola (el juego avisa con un toque para actualizar).
 
 ## Herramientas de desarrollo
 
